@@ -132,9 +132,10 @@
 			 <p id="altimgjudge"></p>
 			 <p id="altimgreason"></p>
 			</form>
-			 <button id="stylecheckbutton" onload="stylecheckbox()" onclick="stylecheckbox()">submit</button> 
+			 <button id="stylecheckbutton" onload="stylecheckbox()" onclick="stylecheckbox()">submit</button>
+			 </div>
 
-			<div  class="ponds" id="pondering05">
+			<div class="ponds" id="pondering05">
 			<h3>&#127770;&nbsp;pondering05</h3> 
 			<p>Which of below inline element can wrap a block?</p>
 			<p>Hint: You can peep at the source code of the header this page</p>
@@ -157,6 +158,7 @@
 			 <p id="tagstrongjudge"></p>
 			</form>
 			<button id="inlinecheckbutton" onload="inlinecheckbox()" onclick="inlinecheckbox()">submit</button> 
+			</div>
 
           </div <!-- class="indentcontent" -->
         </div> <!-- class="lecturereview" -->
@@ -168,14 +170,18 @@
 			<form>
 				<label for="inlinedirection">inline elements are laid out </label>
 			    <input type="text" class="txtfield" id="inlinedirection" required><br>
+
 				<label for="blockdirection">inline elements are laid out </label>
 				<input type="text" class="txtfield" id="blockdirection" required><br>
-				<input type="text" class="txtfield" id="ignore" required><br>
-				<label for="ignore"> elements ignore width & height</label>
-				<input type="text" class="txtfield" id="display" placeholder="a CSS property" required><br>
-				<label for="display"> can force an element to be inline or block</label>
-				<input type="text" class="txtfield" id="inline-block" required><br>
-				<label for="inline-block"> makes a block element that's laid out horizontally like an inline element.'</label>
+
+				<input type="text" class="txtfield" id="ignore" required>
+				<label for="ignore"> elements ignore width & height</label><br>
+
+				<input type="text" class="txtfield" id="display" placeholder="a CSS property" required>
+				<label for="display"> can force an element to be inline or block</label><br>
+
+				<input type="text" class="txtfield" id="inline-block" required>
+				<label for="inline-block"> makes a block element that's laid out horizontally like an inline element.'</label><br>
 			  </form> 
 			  <button id="button01"type="button" onclick="pondering01()" action="#" method="GET">Submit</button>
 			<button id="inlineblockdiff" onclick="inlineblockdiff()">submit</button> 
