@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title id="pagetitle">EECS1012: Computational Meditation Club</title>
@@ -9,12 +9,12 @@
 	
   <body>
     <script src="./js/s01/pondering01.js"></script>
-    <script src="./js/s01/pondering02.js"></script>
-    <script src="./js/s01/pondering03.js"></script>
-    <script src="./js/s01/langfunc.js"></script>
-    <script src="./js/s01/epiphanylang.js"></script>
-    <script src="./js/s01/stylecheckbox.js"></script>
-    <script src="./js/s01/inlinecheckbox.js"></script>
+	<script src="./js/s01/pondering02.js"></script>
+	<script src="./js/s01/pondering03.js"></script>
+	<script src="./js/s01/langfunc.js"></script>
+	<script src="./js/s01/epiphanylang.js"></script>
+	<script src="./js/s01/stylecheckbox.js"></script>
+	<script src="./js/s01/inlinecheckbox.js"></script>
     <script src="./js/s01/inlineblockdiff.js"></script>
 
 	<header>
@@ -35,14 +35,14 @@
 			<li id="logocompute">
 			  <img src="./img/index/logocomputational.png" alt="logodefine" width="450 height="32">
 			</li>
-
 		  </ul>
 	    </div> <!-- class="logobar" -->
-	  </a>	
+	  </a>
+
       <a href="index.html">
       <div class="hover_img">
 	  <h1 class="coursetitle">Computational Meditation Club</h1>
-      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="../img/index/meditation.png" alt="image" height="100" /></span></p>
       </div>
       </a>
     </header>
@@ -66,7 +66,7 @@
 				<label for="l">L: </label>
 				<input type="text" class="txtfield" id="l" value="language">
 			  </form> 
-			  <button id="button01"type="button" onclick="pondering01()" action="#" method="GET">Submit</button>
+			  <button id="button01" type="button" onclick="pondering01()" action="#" method="GET">Submit</button>
 			  <div class="sol" id="sol01">sol01</div>
              </div> <!-- pondering01 -->
 
@@ -131,35 +131,10 @@
 			 <label for="altimg">04. provide alt attribute for img element </label>
 			 <p id="altimgjudge"></p>
 			 <p id="altimgreason"></p>
-
 			</form>
-			 <button id="stylecheckbutton" onload="stylecheckbox()" onclick="stylecheckbox()">submit</button>
-			 
-						<div  class="ponds" id="pondering05">
-			<h3>&#127770;&nbsp;pondering05</h3> 
-			<p>Which of below inline element can wrap a block?</p>
-			<p>Hint: You can peep at the source code of the header this page</p>
-			<form>
-		      <input type="checkbox" id="tagspan">
-			  <label for="tagspan">&lt;span&gt;&lt;/span&gt;</label>
-			  <p id="tagspanjudge"></p>
+			 <button id="stylecheckbutton" onload="stylecheckbox()" onclick="stylecheckbox()">submit</button> 
 
-			  <input type="checkbox" id="taga">
-			  <label for="taga">&lt;a&gt;&lt;/a&gt;</label>
-			  <p id="tagajudge"></p>
-			  <p id="tagareason"></p>
-
-			  <input type="checkbox" id="tagcite">
-			  <label for="tagcite">&lt;cite&gt;&lt;/cite&gt;</label>
-			  <p id="tagcitejudge"></p>
-
-			 <input type="checkbox" id="tagstrong">
-			 <label for="altimg">&lt;strong&gt;&lt;/strong&gt;</label>
-			 <p id="tagstrongjudge"></p>
-			</form>
-			<button id="inlinecheckbutton" onload="inlinecheckbox()" onclick="inlinecheckbox()">submit</button> 
-							
-					<div  class="ponds" id="pondering05">
+			<div  class="ponds" id="pondering05">
 			<h3>&#127770;&nbsp;pondering05</h3> 
 			<p>Which of below inline element can wrap a block?</p>
 			<p>Hint: You can peep at the source code of the header this page</p>
@@ -189,7 +164,7 @@
 		<div  class="ponds" id="pondering06">
 		<h3>&#127770;&nbsp;pondering06</h3> 
 		<p>Here are two images that concludes the major difference between an inline element and a block element.<br>Read carefully and fill out the form.</p>
-		<img id="inlineblockimg" src="./img/session1x/inlineblockimg.jpg" alt="html5logo">
+		<img id="inlineblockimg" src="./img/session1x/inlineblockimg.jpg">
 			<form>
 				<label for="inlinedirection">inline elements are laid out </label>
 			    <input type="text" class="txtfield" id="inlinedirection" required><br>
@@ -206,9 +181,6 @@
 			<button id="inlineblockdiff" onclick="inlineblockdiff()">submit</button> 
 						<p class="sol" id="solblock"></p>
 			<p class="sol" id="solinline"></p>
-
-          </div <!-- class="indentcontent" -->
-        </div> <!-- class="lecturereview" -->
 
         <div class="discussion">
 		<p><br></p>
