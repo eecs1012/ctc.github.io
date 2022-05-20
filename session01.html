@@ -133,6 +133,54 @@
 			</form>
 			 <button id="stylecheckbutton" onload="stylecheckbox()" onclick="stylecheckbox()">submit</button>
 			 
+						<div  class="ponds" id="pondering05">
+			<h3>&#127770;&nbsp;pondering05</h3> 
+			<p>Which of below inline element can wrap a block?</p>
+			<p>Hint: You can peep at the source code of the header this page</p>
+			<form>
+		      <input type="checkbox" id="tagspan">
+			  <label for="tagspan">&lt;span&gt;&lt;/span&gt;</label>
+			  <p id="tagspanjudge"></p>
+
+			  <input type="checkbox" id="taga">
+			  <label for="taga">&lt;a&gt;&lt;/a&gt;</label>
+			  <p id="tagajudge"></p>
+			  <p id="tagareason"></p>
+
+			  <input type="checkbox" id="tagcite">
+			  <label for="tagcite">&lt;cite&gt;&lt;/cite&gt;</label>
+			  <p id="tagcitejudge"></p>
+
+			 <input type="checkbox" id="tagstrong">
+			 <label for="altimg">&lt;strong&gt;&lt;/strong&gt;</label>
+			 <p id="tagstrongjudge"></p>
+			</form>
+			<button id="inlinecheckbutton" onload="inlinecheckbox()" onclick="inlinecheckbox()">submit</button> 
+
+          </div <!-- class="indentcontent" -->
+        </div> <!-- class="lecturereview" -->
+
+		<div  class="ponds" id="pondering06">
+		<h3>&#127770;&nbsp;pondering06</h3> 
+		<p>Here are two images that concludes the major difference between an inline element and a block element.<br>Read carefully and fill out the form.</p>
+		<img id="inlineblockimg" src="./img/session1x/inlineblockimg.jpg">
+			<form>
+				<label for="inlinedirection">inline elements are laid out </label>
+			    <input type="text" class="txtfield" id="inlinedirection" required><br>
+				<label for="blockdirection">inline elements are laid out </label>
+				<input type="text" class="txtfield" id="blockdirection" required><br>
+				<input type="text" class="txtfield" id="ignore" required><br>
+				<label for="ignore"> elements ignore width & height</label>
+				<input type="text" class="txtfield" id="display" placeholder="a CSS property" required><br>
+				<label for="display"> can force an element to be inline or block</label>
+				<input type="text" class="txtfield" id="inline-block" required><br>
+				<label for="inline-block"> makes a block element that's laid out horizontally like an inline element.'</label>
+			  </form> 
+			  <button id="button01"type="button" onclick="pondering01()" action="#" method="GET">Submit</button>
+			<button id="inlineblockdiff" onclick="inlineblockdiff()">submit</button> 
+						<p class="sol" id="solblock"></p>
+			<p class="sol" id="solinline"></p>	
+				
 			 
           </div <!-- class="indentcontent" -->
         </div> <!-- class="lecturereview" -->
