@@ -5,17 +5,17 @@
 	<meta name="author" content="Xuan Chen">
 	<link rel="stylesheet" href="./css/session1x.css" media="screen" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="./js/s01/pondering01.js"></script>
-	<script src="./js/s01/pondering02.js"></script>
-	<script src="./js/s01/pondering03.js"></script>
-	<script src="./js/s01/langfunc.js"></script>
-	<script src="./js/s01/epiphanylang.js"></script>
-	<script src="./js/s01/stylecheckbox.js"></script>
-	<script src="./js/s01/inlinecheckbox.js"></script>
-    <script src="./js/s01/inlineblockdiff.js"></script>
   </head>
 	
   <body>
+  	<script src="./js/s02/solstatement.js"></script>
+    <script src="./js/s02/varalert.js"></script>
+	<script src="./js/s02/letalert.js"></script>
+	<script src="./js/s02/langfunc.js"></script>
+	<script src="./js/s02/epiphanylang.js"></script>
+	<script src="./js/s02/stylecheckbox.js"></script>
+	<script src="./js/s02/inlinecheckbox.js"></script>
+    <script src="./js/s02/inlineblockdiff.js"></script>
 
 	<header>
 	   <!--TODO: change the url to 1012 course page-->
@@ -42,7 +42,7 @@
       <a href="index.html">
       <div class="hover_img">
 	  <h1 class="coursetitle">Computational Meditation Club</h1>
-      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="../img/index/meditation.png" alt="image" height="100" /></span></p>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
       </div>
       </a>
     </header>
@@ -52,10 +52,73 @@
         <div class="lecturereview">
 	    <h2>&#127773;&nbsp;Lecture Highlights</h2>
 		  <div class="indentcontent">
-
             <div  class="ponds" id="pondering01">
 		    <h3>&#127770;&nbsp;pondering01</h3>
-			  <p>what do each letter of HTML represent?</p>
+			</div> <!-- pondering01 -->
+			<p>Warm up: concepts about statement, block and function</p>
+			<pre><code>1  function count(input){
+2    if(input != 0){
+3      alert("Let's start from 0.");
+4      input = 0;
+5    }
+6    while(input < 5){
+7      input++;
+8   }
+9 }</code></pre>
+
+		<label for="statementtxt">Which lines are statements?</label>
+	    <input type="text" id="statementtxt">
+	    <p id="solstatement"></p>
+		<label for="blocktxt">Which lines are blocks?</label>
+        <input type="text" id="blocktxt">
+		<p>Hint: there are two blocks inside the function <code>count</code></p>
+	    <p id="solblock"></p>
+		<button onclick="statement()" onload="statement() action="#">check answers</button>
+
+
+		<div class="ponds" id="pondering02">
+		<h3>&#127770;&nbsp;pondering02</h3>
+        <p>In lecture, we only introduced the keyword <code>var</code> when declaring a variable.
+		   However, as you touch more source code outside the course,
+		   you will frequently encounter keywords <code>let</code> and <code>const</code>.
+		   Here, we are going to explore the difference of these 3 keywords,and make clear a crucial important concept "scope".</p>
+		<p>Q1: What will <code>alert</code> output for the code snippet below?</p>
+
+<pre><code>
+1  if (true) {
+2    var test = true; // use "var"
+3  }
+4  alert(test);
+</code></pre>
+
+		<p>Hint: “var” has no block scope. <br>
+		   Variables, declared with <code>var</code>, are either function-scoped or global-scoped. They are visible through blocks.</p>
+		<button id="varalert" onclick="varalert()" onload="varalert()">check</button>
+        <p class="sol" id="solvaralert"></p>
+
+        <p>Q2: What will <code>alert</code> output for the code snippet below?</p>
+        <p>Clue 1: variable declared with <code>let</code> is only visible inside the block</p>
+        <p>Clue 2: What will happen if the variable <code>test</code> is not defined?</p>
+<pre><code>
+1  if (true) {
+2    let test = true; // use "let"
+3  }
+4  alert(test); //
+</code></pre>
+
+		<button id="letalert" onclick="letalert()" onload="letalert()">check</button>
+        <p class="sol" id="solletalert"></p>
+
+        <p>Q3: What will <code>alert</code> output for the code snippet below?</p>
+        <p>Clue 1: JavaScript <code>const</code> variables must be assigned a value when they are declared:</p>
+<pre><code>
+1  const PI;
+2  PI = 3.14159265359;
+3  alert(PI);
+</code></pre>
+
+
+
 			  <form>
 				<label for="h">H: </label>
 			    <input type="text" class="txtfield" id="h" placeholder="hint: 5 letters" required><br>
@@ -65,27 +128,10 @@
 				<input type="text" class="txtfield" id="m" placeholder="hint: 6 letters" required><br>
 				<label for="l">L: </label>
 				<input type="text" class="txtfield" id="l" value="language">
-			  </form> 
+			  </form>
+			  <p>what is the difference between the keyword var, let, const?</p>
 			  <button id="button01" type="button" onclick="pondering01()" action="#" method="GET">Submit</button>
 			  <div class="sol" id="sol01">sol01</div>
-             </div> <!-- pondering01 -->
-
-			<div class="ponds" id="pondering02">
-			<h3>&#127770;&nbsp;pondering02</h3>
-              <p>write the basic structure of the HTML template:</p>
-			  <p>hint1: It consists of below tags: html, head, title, body</p>
-			  <p>hint2: Remember to close all tags</p>
-			  <form>
-				<input type="text" class="text02" id="htmlopen" placeholder="an open tag that is the container for all other HTML elements" required><br>
-				<input type="text" class="text02" id="headopen" placeholder="an open tag" required><br>
-				<input type="text" class="text02" id="headopen" placeholder="an open tag" required><br>
-				<input type="text" class="text02" id="titles" placeholder="a pair of open and closing tags" required><br>
-				<input type="text" class="text02" id="headclose"  placeholder="a closing tag" required><br>
-				<input type="text" class="text02" id="bodyclose" placeholder="a closing tag" required><br>
-				<input type="text" class="text02" id="htmlclose" placeholder="a closing tag" required><br>
-			  </form> 
-			  <button id="button02" type="button" onclick="pondering02()" action="#" method="GET">Submit</button>
-			  <div class="sol" id="sol02">sol02</div>
               </div>   <!-- pondering02 -->
 
 			<div  class="ponds" id="pondering03">
