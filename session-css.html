@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title id="pagetitle">EECS1012: Computational Meditation Club</title>
@@ -16,8 +16,6 @@
   <body>
 
 	<header>
-	   <!--TODO: change the url to 1012 course page-->
-	   <!--note: a href= is the only exception that an inline element can wrap a container element-->
 	  <a href="index.html">
 	    <div class="logobar">
 		  <ul>
@@ -52,8 +50,10 @@
 		  
 		  <div class="indentcontent">
             <div class="ponds" id="pondering01">
-		    <h3>&#127770;&nbsp;pondering01: &nbsp;Who Would Win? Cascading vs Fighting</h3>
-			<p>How would you interpret the concept of "Cascade"?</p>
+		    <h3>&#127770;&nbsp;pondering01: &nbsp;How would you interpret the concept of "Cascade"?</h3>
+			<h5>Q1:Why Joke 2's question color is black, rather than white?</Q5>
+			<h5>Q2:Why Joke 3's answer is not red?</h5>
+			<h5>Q3: How would like to make Joke3's answer red?</h5>
 			<p class="codepen" data-height="443.9999694824219" data-default-tab="css,result" data-slug-hash="BaYmdNw" data-editable="true" data-user="eecs1012" style="height: 443.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/BaYmdNw">
 			cascading rules-selector class&gt;element student</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
@@ -67,6 +67,8 @@
 
 		    <div class="ponds" id="pondering02">
 		    <h3>&#127770;&nbsp;pondering02&nbsp;When two rules apply that have equal specificity</h3>
+			<h5>Q1: Before running the CodePen, reason what is the color of the word "blew"?</h5>
+			<h5>Q2: How to change it to another color, without deleting any css code?</h5>
             <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="LYQOJWp" data-preview="true" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/LYQOJWp">
 			css-cascading-specificity-order</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
@@ -78,14 +80,50 @@
             </div> <!-- pondering02 -->
 
 		    <div class="ponds" id="pondering03">
+
+
 		    <h3>&#127770;&nbsp;pondering03:&nbsp;Do you really need that many class and id?</h3> 
-		    </div> <!-- pondering03 -->
+			<h5>Q1: Before you run the CodePen, reason what is the font color of words "red"?</h5>
+			<h5>Q2: What change will happen if we move div#child and div#grand-child to div#change-color?</h5>
+			<h5>Q3: How to unifily change Homer, Bart and Maggie's favourtie color into red by modifying just one div's css style?/</h5>
+			<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="css,result" data-slug-hash="gOvXddo" data-preview="true" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/gOvXddo">
+			css-inheritance-child-Simpson-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+<			<script> async src="https://cpwebassets.codepen.io/assets/embed/ei.js"</script>
+			<p class="sol" id="child">The child element will naturally inherit a CSS property with its value from the parent element if the CSS property is not specified.<br>
+			hence, if some contents is a sub-part of another content, you can nest their block tags to unify their styles without using class and id.
+			</p>
+			<p>Inheritance works through multiple generations as well. If a tag like the &lt;em&gt; or &lt;strong&gt; tag appears inside of a &lt;p&gt; tag, then the &lt;em&gt; and the &lt;strong&gt; tags also inherit properties from any style applied to the &lt;body&gt; tag.
+			</p>
+			<p>inheritance is a really big timesaver. Imagine if no properties were passed onto nested tags and you had a paragraph that contained other tags like a &lt;strong&gt; tag, an &lt;em&gt; tag to emphasize text and an &lt;a&gt; tag to add a link. If you created a style that made the paragraph text white and 32 pixels tall, using the Varela Round font, it would be weird if all the text inside the &lt;em&gt;, &lt;strong&gt; and &lt;a&gt; tags reverted to its regular, “browser boring” style. You’d then have to create another style to format the &lt;em&gt tag to match the appearance of the &lt;p&gt; tag. What a drag.
+			<p>Also note that not all properties are inheritable, like border, layout, margin, padding are not, but font, color, list, and text are inherited body. Here is <a href="https://www.w3.org/TR/CSS22/propidx.html" target="_blank">a table stating if a property is inheritable, for your reference</a> </p>
+            </div>
+           <!-- pondering03 -->
 
 			<div  class="ponds" id="pondering04">
-			<h3>&#127770;&nbsp;pondering04</h3>
+			<h3>&#127770;&nbsp;pondering04 Pseudo Class: An Intangible Class that Creates Magic!</h3>
+            <p>Q1: uncomment the second line, observe the magic.</p>
+			<p class="codepen" data-height="320.79998779296875" data-theme-id="light" data-default-tab="css,result" data-slug-hash="dydJNgB" data-editable="true" data-user="eecs1012" style="height: 320.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/dydJNgB">
+			Untitled</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>   <!-- pondering04 -->
 			
 			<div class="ponds" id="pondering05">
 			<h3>&#127770;&nbsp;pondering05</h3>
+			<h5> Q1: Can you use the display property to hide the contents inside span？</h5>
+			<h5>Q2:Then can you let the hidden content show up again when the mouse hovering on it?</h5>
+			<p class="codepen" data-height="287.9999694824219" data-theme-id="light" data-default-tab="css,result" data-slug-hash="ExQoWyJ" data-editable="true" data-user="eecs1012" style="height: 287.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/ExQoWyJ">
+			Untitled</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>   <!-- pondering05 -->
 
 		    <div  class="ponds" id="pondering06">
 			<h3>&#127770;&nbsp;pondering06</h3>
@@ -115,13 +153,14 @@
 			  <li><a href="https://the-winter.github.io/codingjs/">Coding JS</a><br/><span class="linksspan">practicing your computational thoughts using JavaScript</span></li>
 		      </ul>
 		    </nav>
+		</div> <!-- links -->
 
         <div class="contact">
 	      <h3>Contact</h3>
 		    <nav>
 		      <ul>
 		        <li>Course instructor:<br/><span>Hui Wang</span></li>	
-		        <li>Session Host:<br/><span>Name</span></li>
+		        <li>Session Host:<br/><span>Xuan Chen</span></li>
 		        <li>created by:<br/><span>Xuan Chen</span></li>
 		      </ul>
 		    </nav>
