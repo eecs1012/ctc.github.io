@@ -142,6 +142,7 @@ code{
 }
 .ponds{
     border-bottom: 1px dashed grey;
+    margin-top:1%;
 }
 
 label{
@@ -191,6 +192,9 @@ nav a:hover {
 body {
   margin: 0;}
 
+  .discussion{
+      margin-top:2%;
+  }
 
 .sidebar{
   display:flex;
@@ -255,4 +259,3 @@ body {
 .sol{
     display:none;
 }
-
