@@ -128,7 +128,6 @@ nav a:hover {
   margin-right: auto;
   margin: 0 3%; 
   margin-top:0 auto;
-  display:flex;
   margin-bottom:100px;}
 
 body {
@@ -138,6 +137,9 @@ body .sol{
   padding-left: 0;
   margin-bottom:2%;}
 
+code{
+    font-size:18px;
+}
 .ponds{
     border-bottom: 1px dashed grey;
 }
@@ -191,6 +193,7 @@ body {
 
 
 .sidebar{
+  display:flex;
   margin-top:0.3%;
   margin-bottom: 10px;
   margin-left:2%;}
@@ -215,12 +218,25 @@ body {
   color:#00b32d;
   border-bottom: 1px solid #abbaac;}
 
+
+ .links{
+     margin-right:10%;
+     width:80%;
+ }
+
 .links li span{
    color:grey;
    position:relative;
    top:-25px;
    left:15px;
    font-size:1em;}
+
+.contact{
+    float:right;
+    width:20%;
+    margin-top:1%;
+
+}
 
 .contact li {
   color: #666;
@@ -239,3 +255,4 @@ body {
 .sol{
     display:none;
 }
+
