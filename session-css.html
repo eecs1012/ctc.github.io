@@ -49,12 +49,13 @@
 	      <h2>&#127773;&nbsp;Lecture Highlights</h2>
 		  
 		  <div class="indentcontent">
+
             <div class="ponds" id="pondering01">
 		    <h3>&#127770;&nbsp;pondering01: &nbsp;How would you interpret the concept of "Cascade"?</h3>
 			<h5>Q1:Why Joke 2's question color is black, rather than white?</Q5>
 			<h5>Q2:Why Joke 3's answer is not red?</h5>
 			<h5>Q3: How would like to make Joke3's answer red?</h5>
-			<p class="codepen" data-height="443.9999694824219" data-default-tab="css,result" data-slug-hash="BaYmdNw" data-editable="true" data-user="eecs1012" style="height: 443.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<p class="codepen" data-height="444" data-default-tab="css,result" data-slug-hash="BaYmdNw" data-editable="true" data-user="eecs1012" style="height: 443.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/BaYmdNw">
 			cascading rules-selector class&gt;element student</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
 			on <a href="https://codepen.io">CodePen</a>.</span>
@@ -81,18 +82,16 @@
             </div> <!-- pondering02 -->
 
 		    <div class="ponds" id="pondering03">
-
-
 		    <h3>&#127770;&nbsp;pondering03:&nbsp;Do you really need that many class and id?</h3> 
-			<h5>Q1: Before you run the CodePen, reason what is the font color of words "red"?</h5>
-			<h5>Q2: What change will happen if we move div#child and div#grand-child to div#change-color?</h5>
-			<h5>Q3: How to unifily change Homer, Bart and Maggie's favourtie color into red by modifying just one div's css style?</h5>
-			<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="css,result" data-slug-hash="gOvXddo" data-preview="true" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<h5>Q1: Before you run the code, reason what is the font color of words "red"? </h5>
+			<h5>Q2: What changes will happen if we move div#mama to div#change-color?</h5>
+			<h5>Q3: How to uniformly change Marge, Bart and Maggie's clothes font color into red by modifying just one div's css?</h5>
+			<p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="gOvXddo" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/gOvXddo">
 			css-inheritance-child-Simpson-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
 			on <a href="https://codepen.io">CodePen</a>.</span>
 			</p>
-<			<script> async src="https://cpwebassets.codepen.io/assets/embed/ei.js"</script>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 			<p class="sol">The child element will naturally inherit a CSS property with its value from the parent element if the CSS property is not specified.<br>
 			hence, if some contents is a sub-part of another content, you can nest their block tags to unify their styles without using class and id.
 			</p>
@@ -101,43 +100,142 @@
 			<p class="sol">inheritance is a really big timesaver. Imagine if no properties were passed onto nested tags and you had a paragraph that contained other tags like a &lt;strong&gt; tag, an &lt;em&gt; tag to emphasize text and an &lt;a&gt; tag to add a link. If you created a style that made the paragraph text white and 32 pixels tall, using the Varela Round font, it would be weird if all the text inside the &lt;em&gt;, &lt;strong&gt; and &lt;a&gt; tags reverted to its regular, “browser boring” style. You’d then have to create another style to format the &lt;em&gt tag to match the appearance of the &lt;p&gt; tag. What a drag.
 			<p class="sol">Also note that not all properties are inheritable, like border, layout, margin, padding are not, but font, color, list, and text are inherited body. Here is <a href="https://www.w3.org/TR/CSS22/propidx.html" target="_blank">a table stating if a property is inheritable, for your reference</a>
 			</p>
-            </div>
-           <!-- pondering03 -->
+            </div> <!-- pondering03 -->
 
-			<div  class="ponds" id="pondering04">
-			<h3>&#127770;&nbsp;pondering04 Pseudo Class: An Intangible Class that Creates Magic!</h3>
-            <p>Q1: uncomment the second line, observe the magic.</p>
-			<p class="codepen" data-height="320.79998779296875" data-theme-id="light" data-default-tab="css,result" data-slug-hash="dydJNgB" data-editable="true" data-user="eecs1012" style="height: 320.79998779296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/dydJNgB">
-			Untitled</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+
+            <div class="ponds" id="pondering04">
+		    <h3>&#127770;&nbsp;pondering04:&nbsp;Is <code>{position: absolute;}</code> 100% absolute?</h3> 
+			<h5>Q1: Why the three dots do not align on a horizontal line?
+			<h5>Q2: How would you like to set them to be on the same line?</h5>
+			<h5>Q3: Try to move the pacman to the place as you like </h5>
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="LYQerzL" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/LYQerzL">
+			css-margin-pacman-position-abs-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
 			on <a href="https://codepen.io">CodePen</a>.</span>
 			</p>
 			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-			</div>   <!-- pondering04 -->
+			<p class="sol">Because the dots are <code>div</code> elements, <code>div</code> are block elements and will automatically stack vertically.</p>
+			<p class="sol"><code>absolute</code> is a very powerful type of positioning that allows you to literally place any page element exactly where you want it. 
+						   You can use the positioning attributes top, left, bottom, and right and margins to set the location. 
+						   Remember that these values will be relative to the next parent element with relative (or absolute) positioning. 
+						   If there is no such parent, it will default all the way back up to the &lt;html&gt; element itself meaning 
+						   it will be placed relative to the page itself.</p>
+			<img src="./img/sessioncss/marginauto.png" width=700>
 			
 			<div class="ponds" id="pondering05">
-			<h3>&#127770;&nbsp;pondering05</h3>
-			<h5> Q1: Can you use the display property to hide the contents inside span？</h5>
-			<h5>Q2:Then can you let the hidden content show up again when the mouse hovering on it?</h5>
-			<p class="codepen" data-height="287.9999694824219" data-theme-id="light" data-default-tab="css,result" data-slug-hash="ExQoWyJ" data-editable="true" data-user="eecs1012" style="height: 287.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/ExQoWyJ">
+		    <h3>&#127770;&nbsp;pondering05:&nbsp;When to Use Margin</h3> 
+			<h5>1. Change an Element’s Position on the Page</h5>
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="MWpWMpO" data-editable="true" data-user="hubspot" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/hubspot/pen/MWpWMpO">
+			CSS Margin vs. Padding - margin: auto</a> by HubSpot (<a href="https://codepen.io/hubspot">@hubspot</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+			<h5>2. Set the Distance Between Nearby Elements</h5>
+			<p>Margins determine the amount of space between adjacent elements, or whitespace.
+			   Whitespace is important for making web pages visually palatable. 
+			   For instance, use margins to add space between images or between an image and the text description below it:</p>
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="yLMLdbP" data-editable="true" data-user="hubspot" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/hubspot/pen/yLMLdbP">
+			CSS Margin vs. Padding - Image Whitespace</a> by HubSpot (<a href="https://codepen.io/hubspot">@hubspot</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+		    <h5>3. Overlap Elements</h5>
+			<p>On the flip side, a negative margin value lets you overlap page elements. This can come in handy when trying to achieve a broken grid effect.</p>
+
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="eYVyqRQ" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/eYVyqRQ">
+			css-margin-usage-overlap-example</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </div> <!-- 05 -->
+
+            <div class="ponds" id="pondering06">
+		    <h3>&#127770;&nbsp;pondering06:&nbsp;Is <code>{position: absolute;}</code> 100% absolute?</h3> 
+
+			<h5>Q1: Move the closing tag of #pacman from the first line to the last line, wrapping three dots div inside.<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do you see the change? Why is this?</h5>
+			<h5>Q2: How to set them to be on the same horizontal line? Using property <code>position: absolute</code></h5>
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="JjpMgKq" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/JjpMgKq">
 			Untitled</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
 			on <a href="https://codepen.io">CodePen</a>.</span>
 			</p>
 			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-			</div>   <!-- pondering05 -->
 
-		    <div class="ponds" id="pondering06">
-			<h3>&#127770;&nbsp;pondering06</h3>
+			<h5>Q1:change the #wrapper's margin-top, margin-left value to see whether the yellow rectangle will move with it</h5>
+			<h5>Q2:change the yellow rectangle's margin-top, margin-left to see how it moves inside the black rectangle</h5>
+			<p class="codepen" data-height="472" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="ZErvPzB" data-editable="true" data-user="eecs1012" style="height: 472px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/ZErvPzB">
+			css-margin-rectangle</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 			</div>   <!-- pondering06 -->
+
+
+			<div class="ponds" id="pondering07">
+		    <h3>&#127770;&nbsp;pondering07:&nbsp;To Whom Is the element <code>relative</code>?</h3>
+			<h5>Q1: How to make the top element stack over the bottom element by changing the bottom element's CSS property <code>position</code> and its value? </h5>
+			<h5>Q2: For <code>#top-element</code>,Is the property {position:relative} mandatory? </h5>
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="QWQaXRv" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/QWQaXRv">
+			css-relative-position-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>   <!-- pondering07 -->
+
+			
+			<div class="ponds" id="pondering08">
+		    <h3>&#127770;&nbsp;pondering08:&nbsp;How to Properly Set Down A Form?</h3>
+			<h5>Q1: How to make the labels and their corresponding input box on the same line?</h5>
+			<h5>Q2: How to make the labels align by their commas?</h5>
+			<p class="codepen" data-height="320" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="KKQZLMY" data-editable="true" data-user="eecs1012" style="height: 319.2000732421875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/KKQZLMY">
+			css-text-align-form-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>   <!-- pondering08 -->
+
+
+			<div  class="ponds" id="pondering09">
+			<h3>&#127770;&nbsp;pondering09 Pseudo Class: An Intangible Class that Creates Magic!</h3>
+            <h5>Q1: uncomment the second line, observe the magic.</h5>
+			<h5>Q2:change the value of content from * into word "required" </h5>
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="dydJNgB" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/dydJNgB">
+			css-pseudoClass-application*-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>   <!-- pondering09 -->
+			
+			<div class="ponds" id="pondering010">
+			<h3>&#127770;&nbsp;pondering10:&nbsp;Let Pseudo Class Help You Keep the Secret</h3>
+			<h5>Q1: Can you use the display property to hide the contents inside span？</h5>
+			<h5>Q2:Then can you let the hidden content show up again when the mouse hovering on it?</h5>
+			<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="ExQoWyJ" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/ExQoWyJ">
+			css-pseudoClass-dropdownmenu-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>   <!-- pondering10 -->
+
 		  </div>  <!-- class="indentcontent" -->
-        </div> <!-- class="lecturereview" -->
+          </div> <!-- class="lecturereview" -->
 
         <div class="discussion">
 		  <h2>&#127773;&nbsp;Open Up Your Mind</h2>
 		  <div class="indentcontent">
-          <h3>&#127770;&nbsp;Have you learned JavaScript before?</h3>
-		  <p>What is your favourite tool when learning or using JavaScript? Please share your experience~</p>
+          <h3>&#127770;&nbsp;Have you learned CSS before?</h3>
+		  <p>What is your favourite tool when learning or using CSS? Please share your experience~</p>
 		  </div>  <!-- class="indentcontent" -->
 		</div> <!-- class="discussion" -->
       </section>   <!-- leftcolumn-->
@@ -147,12 +245,10 @@
 		  <h3>links</h3>
 		    <nav>
 			  <ul>
-			  <li><a href="https://www.w3schools.com/html/default.asp">W3Schools HTML</a></li>
-		      <li><a href="https://www.w3schools.com/css/default.asp">W3Schools CSS</a></li>
-		      <li><a href="https://www.w3schools.com/js/default.asp">W3Schools JavaScript</a></li>
-		      <li><a href="https://validator.w3.org/images/w3c.png">W3C Validator</a></li>
-			  <li>&nbsp;</li>
-			  <li><a href="https://the-winter.github.io/codingjs/">Coding JS</a><br/><span class="linksspan">practicing your computational thoughts using JavaScript</span></li>
+			  <li><a href="https://www.onblastblog.com/wp-content/uploads/2017/01/CSS3-Cheat-Sheet.pdf" target="_blank">Huge cheat sheet for CSS</a></li>
+              <li><a href="https://www.youtube.com/watch?v=1PnVor36_40&list=PLZlA0Gpn_vH9D0J0Mtp6lIiD_8046k3si" target="_blank">My Favourite CSS Crash Course</a></li>
+		      <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS</a></li>
+		      <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></li>
 		      </ul>
 		    </nav>
 		</div> <!-- links -->
