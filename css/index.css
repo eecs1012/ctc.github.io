@@ -110,7 +110,7 @@ nav a:hover {
 #logocompute{
   width:70%;}
 
-.content{
+.leftcolumn{
     width:100%;
     padding-right:2%;}
 
@@ -118,18 +118,22 @@ body {
   margin: 0; }
 
 .main {
+  display:flex;
   max-width: 80em;
   margin-left: 0 auto;
   margin-right: auto;
   margin: 0 3%; 
   margin-top:0 auto;
-  display:flex;
   margin-bottom:100px;}
   
 body .sol{
   padding-left: 60px;}
 
-.session{
+ .lect{
+     color:rgb(252,9,0);
+  }
+
+.session,.lect{
   display:flex;
   border-bottom: 1px solid #d8d8e8;
   width:100%;
@@ -155,11 +159,17 @@ body .sol{
   margin-top: 0;
   margin-bottom:0;}
 
-.session-title{
+.session-title,.lect-title{
    margin-left:15%;
    border-bottom: 1px solid #40404a;
-   color:#00bfff;
    width:100%;}
+
+
+.session-title{
+   color:#00bfff;}
+
+.lect-title{
+   color:#ff8000;}
 
 #schedule-footnote{
   margin-top:-1%;}
@@ -223,3 +233,4 @@ div .indentcontent, .epiphany{
   color: #00b32d;
   background: #eeecec;
   border-bottom: 1px solid #beb6b8;}
+
