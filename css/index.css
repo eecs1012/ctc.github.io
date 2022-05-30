@@ -111,11 +111,8 @@ nav a:hover {
   width:70%;}
 
 .leftcolumn{
-    width:100%;
-    padding-right:2%;}
 
-body {
-  margin: 0; }
+    padding-right:2%;}
 
 .main {
   display:flex;
@@ -136,7 +133,6 @@ body .sol{
 .session,.lect{
   display:flex;
   border-bottom: 1px solid #d8d8e8;
-  width:100%;
   padding-top:10px;
   padding-bottom:20px;}
 
@@ -149,8 +145,8 @@ body .sol{
   color:#00b32d;
   text-decoration-line: underline;
   text-decoration-color:#40404a;
-   text-decoration-thickness: 1px;
-   text-underline-offset: 0.6em;}
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6em;}
 
 .session-outline li{
   font-size: 14pt;
@@ -161,8 +157,7 @@ body .sol{
 
 .session-title,.lect-title{
    margin-left:15%;
-   border-bottom: 1px solid #40404a;
-   width:100%;}
+   border-bottom: 1px solid #40404a;}
 
 
 .session-title{
@@ -190,7 +185,8 @@ div .indentcontent, .epiphany{
   padding-right:15%;
   padding-left:3%;
   margin-top:0.55%;
-  margin-bottom: 10px;}
+  margin-bottom: 10px;
+  margin-left:3%;}
 
 .sidebar h3{
   font-size:1.25em;
@@ -233,4 +229,3 @@ div .indentcontent, .epiphany{
   color: #00b32d;
   background: #eeecec;
   border-bottom: 1px solid #beb6b8;}
-
