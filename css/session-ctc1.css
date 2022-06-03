@@ -248,15 +248,19 @@ body {
   background: #eeecec;
   border-bottom: 1px solid #beb6b8;}
 
+embed{
+    display:inline;
+}
+
 .sol{
     display:none;
 }
 
 
+
 #solprepost:target{
     display:block;
 }
-
 
 #sol-miss-precond:target{
     display:block;
@@ -268,6 +272,22 @@ body {
 
 #sol-var-name:target{
     display:block;
+}
+
+.check{
+    display:inline;
+}
+
+#sol-clinic-1:target{
+    display:inline-block;
+}
+
+#sol-clinic-2:target{
+    display:inline-block;
+}
+
+#sol-clinic-3:target{
+    display:inline-block;
 }
 
 
