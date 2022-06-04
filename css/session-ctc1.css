@@ -180,7 +180,6 @@ nav a {
 nav a:hover {
     color: #ec008c;}
 
-
 body {
   margin: 0;}
 
@@ -249,48 +248,38 @@ body {
   border-bottom: 1px solid #beb6b8;}
 
 embed{
-    display:inline;
-}
+    display:inline;}
 
 .sol{
-    display:none;
-}
-
-
+    display:none;}
 
 #solprepost:target{
-    display:block;
-}
+    display:block;}
 
 #sol-miss-precond:target{
-    display:block;
-}
+    display:block;}
 
 #sol-code-immed:target{
-    display:block;
-}
+    display:block;}
 
 #sol-var-name:target{
-    display:block;
-}
+    display:block;}
 
 .check{
-    display:inline;
-}
+    display:inline;}
 
 #sol-clinic-1:target{
-    display:inline-block;
-}
+    display:inline-block;}
 
 #sol-clinic-2:target{
-    display:inline-block;
-}
+    display:inline-block;}
 
 #sol-clinic-3:target{
-    display:inline-block;
+    display:inline-block;}
+
+#sol-max2031:target{
+    display:block;
 }
-
-
 
 #codepen-strawberry{
     display:none;}
@@ -298,7 +287,6 @@ embed{
 #codepen-strawberry:target{
     display:block;
 }
-
 
 #codepen-strawberry-sol1{
     display:none;}
