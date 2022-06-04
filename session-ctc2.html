@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title id="pagetitle">EECS1012: Computational Meditation Club</title>
+	<meta name="author" content="Xuan Chen">
+	<link rel="stylesheet" href="./css/session-ctc2.css" media="screen" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./js/sctc1/soltablediff.js"></script>
+  </head>
+	
+  <body>
+
+	<header>
+	  <a href="index.html">
+	    <div class="logobar">
+		  <ul>
+		    <li class="logo">
+			  <img src="./img/index/logohtmllarge.png" alt="html5logo" width="100" height="26">
+			</li>
+		    <li class="logo">
+			  <img src="./img/index/logocsslarge.png" alt="css3logo" width="100" height="26">
+			</li>
+			<li class="logo">
+			  <img src="./img/index/logojslarge.png" alt="jslogo" width="100" height="26">
+			</li>
+			<li id="logocompute">
+			  <img src="./img/index/logocomputational.png" alt="logodefine" width="450 height="32">
+			</li>
+		  </ul>
+	    </div> <!-- class="logobar" -->
+	  </a>
+
+      <a href="index.html">
+      <div class="hover_img">
+	  <h1 class="coursetitle">Computational Meditation Club</h1>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
+      </div>
+      </a>
+    </header>
+
+	<div class="main">
+        <section class="leftcolumn">
+        <div class="lecturereview">
+	    <h2>&#127773;&nbsp;Lecture Highlights</h2>
+
+		  <div class="indentcontent">
+			<div class="ponds" id="pondering01">
+			  <h3>&#127770;&nbsp;pondering01: Variations of FOR Loop</h3>
+			  <h5>variation-1: counting down<h5>
+			  <embed src="./img/session-ctc2/for-loop-count-down.jpg" width="400" height="200">
+			  <p>exercise: draw a flowchart to output the count-down number from 5 to 1 in the designated text position. <br>
+				 And alert "Blast Off!" after 1 is being counted.</p>
+
+			  <h5>variation-2: skipping steps<h5>
+			  <embed src="./img/session-ctc2/for-loop-skip.jpg" width="400" height="200">
+			  <p>exercise: In a paper test, students sitting next to each other should be given paper of different color.<br>
+						   Assume each row has 20 seats, the first seat is alway given a green paper.<br>
+						   Given an array of paper color, i.e. papers=["g", "b", "g", "b","g","b","b","b","g","b","g","g",......"b"]<br>
+						   draw a flowchart to check if the paper put on the table is of correct color.If incorrect, change the paper color for a correct one.
+			  </p>
+
+			  <h5>variation-2: update multiple variables<h5>
+			  <embed src="./img/session-ctc2/for-loop-multiple-variable.jpg" width="400" height="200">
+			  <p>exercise: A palindrome is a sequence of characters which reads the same backward as forward, such as "madam" or "racecar".<br>
+						   Given a string, draw a flowchart to output whether it is a palindrome or not.
+			  </p>
+			</div> <!-- pondering01 -->
+
+
+		    <div class="ponds" id="pondering02">
+		      <h3>&#127770;&nbsp;FlowChart Clinic: No More Oops! in Loops</h3>
+
+              <img src="./img/session-ctc2/mistake-while-no-initialization.jpg" width="400" height="500">
+			  <a class="check" href="#sol-while-no-initial"><p>check the answer</p></a>
+			  <p class="sol" id="sol-while-no-initial">It forgets to initialize a variable that is used in the condition of the loop.<br>
+			  Remember that the first time the condition is checked is before starting the execution of the body of the loop.</p>
+
+              <img src="./img/session-ctc2/mistake-while-mismatch.jpg" width="400" height="500">
+			  <a class="check" href="#sol-while-condition-mismatch"><p>check the answer</p></a>
+			  <p class="sol" id="sol-while-condition-mismatch">It is off by 1 in the number of iterations, i.e., it prints a line consists of 11.<br>
+			  Typically this is due to a mismatch between the condition of the loop and the initialization of the variables used in the condition.<br>
+			  To avoid such types of errors, it is often convenient to test the loop with a small ovalues for the variables. In the example above, if we check the loop by printing 1 star, instead of 10 (by substituting 10 with 1 in the condition of the loop), we immediately notice that the loop would print 2 stars, instead of 1.
+			  </p>
+
+              <img src="./img/session-ctc2/mistake-while-no-modification.jpg" width="400" height="650">
+			  <a class="check" href="#sol-while-no-modification"><p>check the answer</p></a>
+			  <p class="sol" id="sol-while-no-modification">It forgets to update the variables appearing in the condition of the loop.<br>
+			  The loop will never terminate.</p>
+			</div> <!-- pondering02 -->
+
+
+            <div class="ponds" id="pondering03">
+		    <h3>&#127770;&nbsp;pondering03: Flag--While's Awsome Helper</h3>
+			<h5>Example of using a Flag</h5>
+			<p>One day you encountered the Aladdin's lamp. You wished for a gold marble. 
+			   He agrees, but there is a bonus rule for the wish. He puts the marble in a pocket, mixed with another 99 stone marbles.
+			   He keeps counting how many marbles you have taken out. After you take the gold marble, he will give you equal number of gold marbles to the stone marbles you have taken out.<br>
+			   Draw the flowchart for this game.The initialization of the flowchart is offered as below:
+			</p>
+			<img src="./img/session-ctc2/flag-marble-gold-quest.jpg" width="400" height="420">
+			<a class="check" href="#flag-marble-gold-sol"><p>check the answer</p></a>
+			<img class="sol" id="flag-marble-gold-sol" src="./img/session-ctc2/flag-marble-gold-sol.jpg" width="400" height="570">
+
+			</div> <!-- pondering03 -->
+
+
+		    <div class="ponds" id="pondering04">
+		    <h3>&#127770;&nbsp;pondering04: Algorithm Challenge: Reverse A Number's Digits</h3>
+			<h5>Given a positive integer, output a number whose indigits are in the reversed order of the input</h5>
+			</div> <!-- pondering04 -->
+
+		</div> <!-- class="indentcontent" -->
+        </div> <!-- class="lecturereview" -->
+
+        <div class="discussion">
+		<p><br></p>
+		<h2>&#127773;&nbsp;Open Up Your Mind</h2>
+		  <div class="indentcontent">
+          <h3>&#127770;&nbsp;Do you have any difficulty in drawing flowchart, or thinking of an algorithm before implementation?</h3>
+		  </div>  <!-- class="indentcontent" -->
+		</div> <!-- class="discussion" -->
+
+		</section> <!-- leftcolumn -->
+
+        <div class="sidebar">
+		  <div class="links">
+		  <h3>links</h3>
+		  <nav>
+			<ul>
+			<li><a href="https://app.diagrams.net/">Online Diagrams Tool</a><br/><span class="linksspan">also used in EECS3311 and EECS3421</span></li>
+			<li><a href="https://www.youtube.com/watch?v=OQcWiFA5B_0">Draw Flowchart in Visual Studio</a></li>
+			<li><a href="https://www.youtube.com/watch?v=82On4PqsOwM">Collaborate With Others in Visual Studio</a></li>
+		    <li><a href="https://www.w3schools.com/js/default.asp">W3Schools JavaScript</a></li>
+			<li><a href="https://the-winter.github.io/codingjs/">Coding JS</a><br/><span class="linksspan">practicing your computational thoughts using JavaScript</span></li>
+		    </ul>
+		  </nav>
+	   </div>
+
+       <div class="contact">
+	     <h3>Contact</h3>
+		 <nav>
+		 <ul>
+		 <li>Course instructor:<br/><span>Hui Wang</span></li>	
+		 <li>Session Host:<br/><span>Name</span></li>
+		 <li>created by:<br/><span>Xuan Chen</span></li>
+		 </ul>
+		 </nav>
+	   </div> <!-- contact -->
+	   </div> <!-- sidebar -->
+    </div> <!-- class="main" -->
+  </body>
+</html>
