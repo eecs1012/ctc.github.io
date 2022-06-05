@@ -281,6 +281,12 @@ embed{
     display:block;
 }
 
+
+#sol-car-maintenance:target{
+    display:inline;
+}
+
+
 #codepen-strawberry{
     display:none;}
 
