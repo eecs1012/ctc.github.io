@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title id="pagetitle">EECS1012: Computational Meditation Club</title>
+	<meta name="author" content="Xuan Chen">
+	<link rel="stylesheet" href="./css/session-jsmemo.css" media="screen" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./js/sctc1/soltablediff.js"></script>
+  </head>
+	
+  <body>
+
+	<header>
+	  <a href="index.html">
+	    <div class="logobar">
+		  <ul>
+		    <li class="logo">
+			  <img src="./img/index/logohtmllarge.png" alt="html5logo" width="100" height="26">
+			</li>
+		    <li class="logo">
+			  <img src="./img/index/logocsslarge.png" alt="css3logo" width="100" height="26">
+			</li>
+			<li class="logo">
+			  <img src="./img/index/logojslarge.png" alt="jslogo" width="100" height="26">
+			</li>
+			<li id="logocompute">
+			  <img src="./img/index/logocomputational.png" alt="logodefine" width="450" height="32">
+			</li>
+		  </ul>
+	    </div> <!-- class="logobar" -->
+	  </a>
+
+      <a href="index.html">
+      <div class="hover_img">
+	  <h1 class="coursetitle">Computational Meditation Club</h1>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
+      </div>
+      </a>
+    </header>
+
+	<div class="main">
+        <section class="leftcolumn">
+        <div class="lecturereview">
+	    <h2>&#127773;&nbsp;Lecture Highlights</h2>
+		<p>The first part of this session will be a brief demo of what is memory and how is memory related to variables.
+		The concept of memory will expand as we move forward, including to the function call, and to the recursion.</p>
+		<p>For the rest part of the session, I'm not going to repeat Dr. Hui's lecture and slides as they are already super detailed.
+		Rather, I would like to invite you to go through my favourite book that introduces JavaScript syntax: <a href="https://javascript.info/">The Modern JavaScript Tutorial"</a>.
+		It contains some advanced interpretation of the basic syntax.A list of links of the book's content, which fits the requirements of this course, will be offered.
+
+		  <div class="indentcontent">
+		  <div class="ponds" id="pondering01">
+			  <h3>&#127770;&nbsp;Memory:An Invisible Storage Space</h3>
+			  <img a href src="./img/session-jsmemo/memo01.png">
+			  <img a href src="./img/session-jsmemo/memo02.png">
+			  <img a href src="./img/session-jsmemo/memo03.png">
+			  <img a href src="./img/session-jsmemo/memo04.png">
+			  <p>The example and illustration is originated from Jennifer Campbell and Paul Gries, CSC108, UofT; Modified by Xuan Chen</p>
+
+			  <h3>&#127770;&nbsp;How to store values into Memory</h3>
+			  <p>Let's calculate an area of a rectangle lot.</p>
+			  <img a href src="./img/session-jsmemo/var01.png">
+			  <p>the integer value 40 and 100 locate in some arbitrary memory cell.</p>
+			  <img a href src="./img/session-jsmemo/var02.png">
+			  <p>The variable "width" and "height" store the address of 40 and 100, rather than the value of 40 and 100.
+			  <img a href src="./img/session-jsmemo/var03.png">
+			  <p>In some sense, variable "width" and "height" point to memory address of x56 and x09<br>
+			  This is how JavaScript keeps track of values inside memory cells, via a relationship of mapping between variable names and address.</p>
+			  <img a href src="./img/session-jsmemo/var04.png">
+			  <p>We can also assign the expression of these two variables to a new variable, <code>lotArea</code></p>
+			  <img a href src="./img/session-jsmemo/var05.png">
+			  <p>When assigning new value to an existing variable, that variable no longer points to the old value, 
+			  rather, it stores the address of the new value.</p>
+			  <img a href src="./img/session-jsmemo/var06.png">
+			  <h6>exercise01: modify the last diagram, assume value 120 locates in the address x10, and the variable height is assigned 120.</h6>
+			  <h6>exercise02: if alert(lotArea), Will the output value be 360?(i.e. 120 * 30) Why?</h6>
+
+			  <h3>Visualize the code</h3>
+			  <iframe width="850" height="550" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%0Avar%20width%20%3D%2040%3B%0Avar%20height%20%3D%20100%3B%0Avar%20lotArea%20%3D%20width%20*%20height%3B%0Aconsole.log%28%22logArea%3D%22%2BlotArea%29%3B%0A%0Awidth%20%3D%2030%3B%0Aheight%20%3D%20120%3B%0Aconsole.log%28%22after%20new%20assignment%20of%20width%20and%20height,%20lotArea%3D%22%2BlotArea%29%3B%0A%0AlotArea%20%3D%20width%20*%20height%3B%0Aconsole.log%28%22after%20new%20assignment%20of%20lotArea,%20lotArea%3D%22%2BlotArea%29%3B&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false">
+			  </iframe>
+
+
+
+			 <h3>&#127770;&nbsp;Ruels for executing an assignment statement</h3>
+			 <h6>Declar a variable:</h6>
+			 <code>var variableName</code>
+			 <h6>Assignment statement:</h6>
+			 <code>variableName = expression</code>
+			 <h6>1. Evaluate the expression on the right of the = sign to produce a value.<br>
+			 This value has a memory address.</h6>
+			 <h6>2. Store the memory address of the value in the variable on the left of the =.</h6>
+
+			 </div> <!-- pondering01 -->
+
+
+			 <div class="ponds" id="pondering02">
+			  <h3>&#127770;&nbsp;The Modern JavaScript Tutorial</h3>
+			  <a href="https://javascript.info/var" target="_blank"><h4>6.4 The old "var"</h4></a>
+			  <a href="https://javascript.info/variables" target="_blank"><h4>2.4 Variables</a></h4>
+			  <a href="http://javascript.info/types" target="_blank"><h4>2.5 Data Types</h4></a>
+			  <a href="https://javascript.info/alert-prompt-confirm" target="_blank"><h4>2.6 Interaction: alert, prompt, confirm</h4></a>
+			  <a href="https://javascript.info/type-conversions" target="_blank"><h4>2.7 Type Conversions</h4></a>
+			  <a href="https://javascript.info/operators" target="_blank"><h4>2.8 Basic operators, maths</h4></a>
+			  <a href="https://javascript.info/comparison" target="_blank"><h4>2.9 Comparisons</h4></a>
+			  <a href="https://javascript.info/ifelse" target="_blank"><h4>2.10 Conditional branching: if, '?'</h4></a>
+			  <a href="https://javascript.info/logical-operators" target="_blank"><h4>2.11 Logical operators</h4></a>
+			  <a href="https://javascript.info/while-for" target="_blank"><h4>2.13 Loops: while and for</h4></a>
+			  <a href="https://javascript.info/switch" target="_blank"><h4>2.14 The "switch" statement</h4></a>
+			  <a href="https://javascript.info/function-basics" target="_blank"><h4>2.15 JS function basics</h4></a>
+			  <a href="https://javascript.info/function-expressions" target="_blank"><h4>2.16 JS function expressions</h4></a>
+			 </div> <!-- pondering02 -->
+
+
+			 <div class="ponds" id="pondering02">
+			  <h3>&#127770;&nbsp;The Modern JavaScript Tutorial</h3>
+			  <a href="https://javascript.info/primitives-methods" target="_blank"><h4>5.1 Methods of primitives</h4></a>
+			  <a href="https://javascript.info/string" target="_blank"><h4>5.2 Strings</h4></a>
+			  <a href="https://javascript.info/array" target="_blank"><h4>5.4 Arrays</h4></a>
+			  <a href="https://javascript.info/array-methods" target="_blank"><h4>5.5 Array methods</h4></a>
+			  <a href="https://javascript.info/date" target="_blank"><h4>5.11 Date and time</h4></a>
+			 </div> <!-- pondering02 -->
+
+		</div> <!-- class="indentcontent" -->
+        </div> <!-- class="lecturereview" -->
+
+        <div class="discussion">
+		<p><br></p>
+		<h2>&#127773;&nbsp;Open Up Your Mind</h2>
+		  <div class="indentcontent">
+          <h3>&#127770;&nbsp;Do you have any difficulty in drawing flowchart, or thinking of an algorithm before implementation?</h3>
+		  </div>  <!-- class="indentcontent" -->
+		</div> <!-- class="discussion" -->
+
+		</section> <!-- leftcolumn -->
+
+        <div class="sidebar">
+		  <div class="links">
+		  <h3>links</h3>
+		  <nav>
+			<ul>
+			<li><a href="https://app.diagrams.net/">Online Diagrams Tool</a><br/><span class="linksspan">also used in EECS3311 and EECS3421</span></li>
+			<li><a href="https://www.youtube.com/watch?v=OQcWiFA5B_0">Draw Flowchart in Visual Studio</a></li>
+			<li><a href="https://www.youtube.com/watch?v=82On4PqsOwM">Collaborate With Others in Visual Studio</a></li>
+		    <li><a href="https://www.w3schools.com/js/default.asp">W3Schools JavaScript</a></li>
+			<li><a href="https://the-winter.github.io/codingjs/">Coding JS</a><br/><span class="linksspan">practicing your computational thoughts using JavaScript</span></li>
+		    </ul>
+		  </nav>
+	   </div>
+
+       <div class="contact">
+	     <h3>Contact</h3>
+		 <nav>
+		 <ul>
+		 <li>Course instructor:<br/><span>Hui Wang</span></li>
+		 <li>created by:<br/><span>Xuan Chen</span></li>
+		 </ul>
+		 </nav>
+	   </div> <!-- contact -->
+	   </div> <!-- sidebar -->
+    </div> <!-- class="main" -->
+  </body>
+</html>
