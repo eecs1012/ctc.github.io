@@ -214,11 +214,9 @@ body {
   color:#00b32d;
   border-bottom: 1px solid #abbaac;}
 
-
  .links{
      margin-right:10%;
-     width:80%;
- }
+     width:80%;}
 
 .links li span{
    color:grey;
@@ -230,9 +228,7 @@ body {
 .contact{
     float:right;
     width:20%;
-    margin-top:1%;
-
-}
+    margin-top:1%;}
 
 .contact li {
   color: #666;
@@ -252,20 +248,46 @@ embed{
     display:inline-block;}
 
 .sol{
-    display:none;
-}
+    display:none;}
 
 #sol-while-no-initial:target{
-    display:block;
-}
+    display:block;}
 
 #sol-while-condition-mismatch:target{
-    display:block;
-}
+    display:block;}
+
 #sol-while-no-modification:target{
+    display:block;}
+
+#flag-marble-gold-sol:target{
+    display:block;}
+
+#count-correct:target{
+    outline-style:solid;
+    outline-width:3px;
+    outline-color:blue;}
+
+#count-exercise-correct:target{
+    outline-style:solid;
+    outline-width:3px;
+    outline-color:blue;
+}
+
+/*
+#sol-blastoff:target{
     display:block;
 }
 
-#flag-marble-gold-sol:target{
+#sol-count-formula:target{
     display:block;
 }
+
+*/
+
+#sol-clinic-forloop:target{
+    display:block;
+}
+
+
+
+
