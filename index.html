@@ -9,35 +9,38 @@
 
   <body>
 	<header>
-	  <a href="#">
-	    <div class="logobar">
 		  <ul>
-		    <li class="logo">
-			  <img src="./img/index/logohtmllarge.png" alt="html5 logo" width="100" height="26">
+		    <li>
+			  <img src="./img/index/logohtmllarge.png" alt="html5 logo" width="100" height="30">
 			</li>
-		    <li class="logo">
-			  <img src="./img/index/logocsslarge.png" alt="css3 logo" width="100" height="26">
+		    <li>
+			  <img src="./img/index/logocsslarge.png" alt="css3 logo" width="100" height="30">
 			</li>
-			<li class="logo">
-			  <img src="./img/index/logojslarge.png" alt="javascript logo" width="100" height="26">
+			<li>
+			  <img src="./img/index/logojslarge.png" alt="javascript logo" width="100" height="30">
 			</li>
-			<li id="logocompute">
-			  <img src="./img/index/logocomputational.png" alt="icon computational thinking" width="450 height="32">
+
+			<li>
+			  <img src="./img/index/logocomputational.png" alt="icon computational thinking" width="500" height="32">
+			</li>
+
+			<li>
+			  <img src="./img/index/lassonde.png" alt="icon computational thinking" width="130" height="35">
+			</li>
+
+			<li>
+			  <img src="./img/index/logoYork.png" alt="yorku logo" width="126" height="32">
 			</li>
 		  </ul>
 
-	    </div> <!-- class="logobar" -->
-	  </a>	
-
-
       <div class="hover_img">
-	  <h1 class="coursetitle">Computational Meditation Club</h1>
-      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
+	  <h1>Computational Meditation Club</h1>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100"/></span></p>
       </div>
     </header>
 	
 		<div class="main">
-		  <div class="content">
+		  <div class="left-column">
 		    <h2>WELCOME</h2>
 			  <p id="welcome-content">
 				&nbsp;&nbsp;&nbsp;Hi, this inveractive website is a part of the inverse classroom of EECS1012. The in-class coding demo is in the orange links. 
@@ -57,196 +60,126 @@
 
 			<h3>Partial Meditation Club Schedule<span></h3>
 			  <p id="schedule-footnote"><em>(Will be modified as course progresses)</em></p>
-					
-			  <div class="session">
-			    <a href="session01.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">05/20/2022</span></h4>
-				<a href="session01.html" div class="session-outline">
-				<h4 class="session-title">Introduction to HTML</h4>
-				<ul>
-				  <li>Basic Structure of a Web Page</li>
-				  <li>Block and Inline Statements</li>
-			          <li>HTML basics: headings, paragraphs, lists and anchors</li>
-				  <li>Course Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-			
-			  <div class="session">
-			    <a href="session-css.html" class="session-num"><h4><span>session 02<span></a><br><span class="dates">05/29/2022</span></h4>
-				<a href="session-css.html" div class="session-outline">
-				<h4 class="session-title">Dive Deep Into CSS</h4>
-				<ul>
-			      <li>Versatile Attributes: Padding, Margin, Display and More</li>
-				  <li>Inheritance: Do You Really Need that Many Class and ID?</li>
-				  <li>Pseudo Class: A Virtual Class Who Works Hard</li>
-				  <li>CSS Learning Resource Sharing</li>
-				</ul>
-                </a>
-			  </div>
 
-			  <div class="lect">
-			    <a href="lect-jsintro.html" class="session-num"><h4><span>lect 03<span></a><br><span class="dates">05/25/2022</span></h4>
-				<a href="lect-jsintro.html" div class="session-outline">
-				<h4 class="lect-title">In-class Demo: &nbsp;DOM and Introduction to JS events</h4>
-                </a>
+			  <div class="session">
+				<!-- Pay attention to the alignment of <h4> and <div .session-outline>, a inner connection to css display:flex;-->
+			    <h4><span>session 01<br></span><span class="date">05/15/2022</span></h4>
+				<div class="session-outline">
+			      <a href="#"> <!-- element <a> is the only inline element that can wrap block elements -->
+				  <h4 class="session-title">Maths Matter</h4>
+				  <ul>
+				    <li>Counting from 0</li>
+				    <li>Division and Modular</li>
+					<li>Greatest Common Factor</li>
+			        <li>Prime Number</li>
+					<li>Fibonacci Sequence</li>
+				  </ul>
+                  </a>
+				</div>
 			  </div>
 
 			  <div class="session">
-			    <a href="session-jsintro.html" class="session-num"><h4><span>session 03<span></a><br><span class="dates">05/29/2022</span></h4>
-				<a href="session-jsintro.html" div class="session-outline">
-				<h4 class="session-title">DOM and Introduction to JS events</h4>
-				<ul>
-				  <li>Interpretation of a DOM</li>
-				  <li>What can JS modify of an element</li>
-			      <li>Default Value of type: The hidden secrect of button</li>
-				  <li>JavaScript Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-
-			  <div class="lect">
-			    <a href="lect-ctc1.html" class="session-num"><h4><span>lect 04<span></a><br><span class="dates">06/01/2022</span></h4>
-				<a href="lect-ctc1.html" div class="session-outline">
-				<h4 class="lect-title">In-class Demo: &nbsp;Computational Thinking 01-if else & case switch</h4>
-                </a>
+				<!-- Pay attention to the alignment of <h4> and <div .session-outline>, a inner connection to css display:flex;-->
+			    <h4><span>session 02<br></span><span class="date">05/22/2022</span></h4>
+				<div class="session-outline">
+			      <a href="session-html.html"><!-- element <a> is the only inline element that can wrap block elements -->
+				  <h4 class="session-title">Introduction to HTML</h4>
+				  <ul>
+				    <li>Basic Structure of a Web Page</li>
+				    <li>Block and Inline Statements</li>
+			        <li>HTML basics: headings, paragraphs, lists and anchors</li>
+				    <li>Course Learning Resources Sharing</li>
+				  </ul>
+                  </a>
+				</div>
 			  </div>
 
 			  <div class="session">
-			    <a href="session-ctc1.html" class="session-num"><h4><span>session 04<span></a><br><span class="dates">06/05/2022</span></h4>
-				<a href="session-ctc1.html" div class="session-outline">
-				<h4 class="session-title">Computational Thinking-01</h4>
-				<ul>
-				  <li>Flowchart tool demo: draw.io</li>
-				  <li>Flowchart Clinic: pre & post condition rules, operation symbols</li>
-				  <li>Flowchart practice: max2031</li>
-				  <li>Who Would Win: if else v.s. Case Switch</li>
-				  <li>Simplify the Nested If-Else statement</li>
-				  <li>Activity: Design an Admission Fee Calculator for Toronto Zoo</li>
-				</ul>
-                </a>
+			    <h4><span>lecture 03<br></span><span class="date">05/25/2022</span></h4>
+				<div class="session-outline">
+				  <a href="lect-domejs.html">
+				  <h4 class="lect-title">Lecture Demo: DOM and Intro to JS events</h4>
+				  <ul>
+				    <li>Example of how HTML, CSS and Js Work Together</li>
+				    <li>Event Handlers: <code>alert,confirm,prompt</code></li>
+			        <li>DOM Element Objects: Change-the-Image</li>
+				    <li>Accessing Elements: getElementBy/li>
+				    <li>Turn On, Turn Off the Light</li>
+					<li>Use Checkbox to Change CSS Style</li>
+				  </ul>
+				  </a>
+				</div>
 			  </div>
 
 			  <div class="session">
-			    <a href="session-ctc2.html" class="session-num"><h4><span>session 05<span></a><br><span class="dates">06/12/2022</span></h4>
-				<a href="session-ctc2.html" div class="session-outline">
-				<h4 class="session-title">Computational Thinking-02</h4>
-				<ul>
-				  <li>Variations of FOR loop<li>
-				  <li>Flowchart Clinic: No More Oops! in Loops</li>
-				  <li>Tip: Always Send Your Loop Code to ICU</li>
-				  <li>Flag revisit: Terminate the Loop Early</li>
-				  <li>Questions to Ask When Designing a While Loop</li>
-				  <li>Algorithm Design Challenge: Reverse A Number's Digits</li>
-				</ul>
+			    <h4><span class="session-num">session 03<br></span><span class="date">05/29/2022</span></h4>
+				<div class="session-outline">
+			    <a href="session-domjs.html">
+				  <h4 class="session-title">DOM and Intro to JS events</h4>
+				  <ul>
+				    <li>Versatile Attributes: Padding, Margin, Display and More</li>
+				    <li>Inheritance: Do You Really Need that Many Class and ID?</li>
+			        <li>Pseudo Class: An Intangible Class that Works Hard</li>
+				    <li>CSS Learning Resources Sharing</li>
+				  </ul>
                 </a>
+				</div>
+			  </div>
+
+			  <div class="session">
+			    <h4><span>lecture 04<br></span><span class="date">05/25/2022</span></h4>
+				<div class="session-outline">
+				  <a href="lect-domejs.html">
+				  <h4 class="lect-title">Computational Thinking 01: if else & case switch</h4>
+				  <ul>
+				    <li>Template of Flowchart: <code>if else</code></li>
+				    <li>Sum Two Numbers: Why It Does Not Work?</li>
+			        <li>Sum Two Numbers: Pre, Post-condition</li>
+				    <li>Sum of 10 to 30</li>
+				    <li>the Flowchart of a Quadratic Equation Root Question</li>
+					<li>Case Switch-Days and Corresponding Numbers</li>
+					<li>Case switch-Switch between Value Ranges</li>
+				  </ul>
+				  </a>
+				</div>
+			  </div>
+
+			  <div class="session">
+			    <h4><span class="session-num">session 04<br></span><span class="date">06/05/2022</span></h4>
+				<div class="session-outline">
+			    <a href="session-if.html">
+				  <h4 class="session-title">Computational Thinking-01: if-else, case switch</h4>
+				  <ul>
+				    <li>Flowchart tool demo: draw.io</li>
+				    <li>Flowchart Clinic: pre & post condition rules, operation symbols</li>
+			        <li>Flowchart practice: max2031</li>
+				    <li>Who Would Win: if else v.s. Case Switch</li>
+				    <li>Simplify the Nested If-Else statement</li>
+					<li>Activity: Design an Admission Fee Calculator for Toronto Zoo</li>
+				  </ul>
+                </a>
+				</div>
 			  </div>
 
 
 			  <div class="session">
-			    <a href="session-ctc3.html" class="session-num"><h4><span>session 06<span></a><br><span class="dates">06/17/2022</span></h4>
-				<a href="session-ctc3.html" div class="session-outline">
-				<h4 class="session-title">Computational Thinking-03</h4>
-				<ul>
-				  <li>Flowchart Clinic: Nested Loop</li>
-				  <li>Skills for Tracing: How Not To Mix up Rows and Columns</li>
-				  <li>Lecture Review: Output sum of even values stored in an array of 100 elements</li>
-			      <li>Algorithm Challenge: Draw An Hourglass</li>
-				  <li>Learning Resources: Coding Js</li>
-				</ul>
+			    <h4><span class="session-num">session 05<br></span><span class="date">06/11/2022</span></h4>
+				<div class="session-outline">
+			    <a href="session-introloop.html">
+				  <h4 class="session-title">Computational Thinking-02: Intro to Loop</h4>
+				  <ul>
+				    <li>Variations of Loop</li>
+				    <li>Flowchart Clinic: No More Oops! in Loops</li>
+			        <li>Always Send Your Loop Code to ICU</li>
+				    <li>Flag revisit: Terminate the Loop Early</li>
+				    <li>Questions to Ask When Designing a While Loop</li>
+					<li>Algorithm Design Challenges</li>
+				  </ul>
                 </a>
+				</div>
 			  </div>
 
-			  <div class="session">
-			    <a href="session-jsmemo.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">06/24/2022</span></h4>
-				<a href="session-jsmemo.html" div class="session-outline">
-				<h4 class="session-title">Relationship between the Memory and Variables</h4>
-				<ul>
-				  <li>Memory:An Invisible Storage Space</li>
-				  <li>How to store values into Memory</li>
-			          <li>Ruels for executing an assignment statement</li>
-				  <li>Learning Resources Sharing:The Modern JavaScript Tutorial</li>
-				</ul>
-                	     </a>
-			  </div>
-
-			  <div class="session">
-			    <a href="session01.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">05/20/2022</span></h4>
-				<a href="session01.html" div class="session-outline">
-				<h4 class="session-title">Introduction to HTML</h4>
-				<ul>
-				  <li>Basic Structure of a Web Page</li>
-				  <li>Block and Inline Statements</li>
-			      <li>HTML basics: headings, paragraphs, lists and anchors</li>
-				  <li>Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-
-			  <div class="session">
-			    <a href="session01.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">05/20/2022</span></h4>
-				<a href="session01.html" div class="session-outline">
-				<h4 class="session-title">Introduction to HTML</h4>
-				<ul>
-				  <li>Basic Structure of a Web Page</li>
-				  <li>Block and Inline Statements</li>
-			      <li>HTML basics: headings, paragraphs, lists and anchors</li>
-				  <li>Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-
-			  <div class="session">
-			    <a href="session01.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">05/20/2022</span></h4>
-				<a href="session01.html" div class="session-outline">
-				<h4 class="session-title">Introduction to HTML</h4>
-				<ul>
-				  <li>Basic Structure of a Web Page</li>
-				  <li>Block and Inline Statements</li>
-			      <li>HTML basics: headings, paragraphs, lists and anchors</li>
-				  <li>Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-
-			  <div class="session">
-			    <a href="session01.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">05/20/2022</span></h4>
-				<a href="session01.html" div class="session-outline">
-				<h4 class="session-title">Introduction to HTML</h4>
-				<ul>
-				  <li>Basic Structure of a Web Page</li>
-				  <li>Block and Inline Statements</li>
-			      <li>HTML basics: headings, paragraphs, lists and anchors</li>
-				  <li>Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-
-			  <div class="session">
-			    <a href="session01.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">05/20/2022</span></h4>
-				<a href="session01.html" div class="session-outline">
-				<h4 class="session-title">Introduction to HTML</h4>
-				<ul>
-				  <li>Basic Structure of a Web Page</li>
-				  <li>Block and Inline Statements</li>
-			      <li>HTML basics: headings, paragraphs, lists and anchors</li>
-				  <li>Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-
-			  <div class="session">
-			    <a href="session01.html" class="session-num"><h4><span>session 01<span></a><br><span class="dates">05/20/2022</span></h4>
-				<a href="session01.html" div class="session-outline">
-				<h4 class="session-title">Introduction to HTML</h4>
-				<ul>
-				  <li>Basic Structure of a Web Page</li>
-				  <li>Block and Inline Statements</li>
-			      <li>HTML basics: headings, paragraphs, lists and anchors</li>
-				  <li>Learning Resources Sharing</li>
-				</ul>
-                </a>
-			  </div>
-			</div> <!-- content -->
+		   </div> <!-- left-column -->
 
             <div class="sidebar">
 			  <div class="links">
@@ -257,10 +190,8 @@
 				  <li><a href="https://www.w3schools.com/css/default.asp">W3Schools CSS</a></li>
 				  <li><a href="https://www.w3schools.com/js/default.asp">W3Schools JavaScript</a></li>
 				  <li><a href="https://validator.w3.org/images/w3c.png">W3C Validator</a></li>
-				  <li><a href="https://pythontutor.com/render.html#mode=edit">Js Memory Tracing Toool</a></li>
-
-				  <li>&nbsp;</li>
-				  <li><a href="https://the-winter.github.io/codingjs/">Coding JS</a><br/><span class="linksspan">practicing your computational thoughts using JavaScript</span></li>
+				  <li><a href="https://pythontutor.com/render.html#mode=edit">Js Memory Tracing Tool</a></li>
+				  <li><h6><a href="https://the-winter.github.io/codingjs/">Coding JS</a></h6></li>
 				</ul>
 			    </nav>
 			  </div>
@@ -269,9 +200,10 @@
 			    <h3>Contact</h3>
 			    <nav>
 				  <ul>
-				    <li>Course instructor:<br/><span>Hui Wang</span></li>	
-				    <li>Session Host:<br/><span>Name</span></li>
-					<li>created by:<br/><span>Xuan Chen</span></li>
+				    <li>Course Instructor:<br/><span>Hui Wang</span></li>	
+				    <li>Session Host:<br/><span>Xuan Chen</span></li>
+					<li>Created by:<br/><span>Xuan Chen</span></li>
+					<li>Mail to:<br/><span>eecs1012ctc@gmail.com</span></li>
 				  </ul>
 				</nav>
 			  <div> <!-- contact -->
