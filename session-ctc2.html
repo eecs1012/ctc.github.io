@@ -59,11 +59,14 @@
 			</div>
 
 			<div class="ponds">
-			  <h3>&#127770; ponder03:Variations of FOR Loop</h3>
+			  <h3>&#127770; ponder03:Variations of Loop</h3>
 			  <h4>variation-1: counting down</h4>
 			  <embed src="./img/session-ctc2/for-loop-count-down.jpg" width="640" height="400">
-			  <p>exercise: draw a flowchart to output the count-down number from 5 to 1 on the white board or your paper.<br>
-			     And alert "Blast Off!" after 1 is counted.Let's check it up during CTC~<br>
+
+			  <p>exercise: draw a flowchart on the white board or your paper.<br>
+			     Output the count-down numbers from 5 to 1,
+			     and alert "Blast Off!" after 1 is counted.<br>
+				 Let's check it up during CTC~<br>
 		      </p>
 			 <embed src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=000000&edit=_blank&layers=1&nav=1&title=white-board.drawio#RldFPD4IgFADwT8OxzWRaXbOy%2F1uz8syElIU%2BQ1rWp0%2BHZsxLXRj8eDx4D4S9tPQlyZMdUCaQbdES4Rmy7ZFlVWMNTw2O62iIJaeahh0E%2FMUabM7Fd05ZYQQqAKF4bmIEWcYiZRiREh5m2AWEeWtOYtaDICKiryGnKtE6tkedLxmPk%2FbmoTvROylpg5tKioRQeHwRniPsSQClZ2npMVH3ru1LuHqGYnt1%2FfWhuJHTdHPcnwc62eKfI58SJMvUr6mrSfe0amH8L56%2FAQ%3D%3D"
 			 width="500" height"300">
@@ -84,7 +87,13 @@
 			  <p><a href="#count-exercise-correct">check up your choice, blue border wraps the correct solution</a></p>
 
 			  <h6><a href="#sol-count-formula">A Shortcut Formula for Quick Count</a></h6>
-			  <p>I personally feel this formula should be exposed at the end of the semester. After you manually counting enough iterations, you will instrinctively come up with this formula.</p>
+			  <p>Hint 1: What's the total number of iterations?</p>
+			  <p>Hint 2: How many steps does it skip in each iteration?(Pay attention to the "=")</p>
+			  <p>Hint 3: What if there are some remaining steps in the last iteration?</p>
+			  <p>After you figure out the solution to the above hints, you will instrinctively come up with this formula.<br>
+			  Hence, I will not give it away today. I personally feel this formula should be exposed at least after reading week.<br>
+			  By that time you can have enough time to absorb the food for thought.<br>
+			  </p>
 			  <img class="sol" id="sol-count-formula" src="./img/session-ctc2/countformula.png">
 
 
@@ -94,10 +103,10 @@
 			  <p>A palindrome is a sequence of characters which reads the same backward as forward, such as "madam" or "racecar".<br>
 				 Draw a flowchart to output whether an input String is a palindrome or not.
 			  </p>
-			</div> <!-- pondering01 -->
+			</div>
 
 
-		    <div class="ponds" id="pondering02">
+		    <div class="ponds">
 		      <h3>&#127770; FlowChart Clinic: No More Oops! in Loops</h3>
 
               <img src="./img/session-ctc2/mistake-while-no-initialization.jpg" width="400" height="500">
@@ -124,11 +133,11 @@
 				 <li>U: update the variable
 			   </ul>
 
-			</div> <!-- pondering02 -->
+			</div>
 
 
-            <div class="ponds" id="pondering03">
-		    <h3>&#127770; ponder03: Flag revisit: Terminate the Loop Early</h3>
+            <div class="ponds">
+		    <h3>&#127770; ponder04: Flag revisit: Terminate the Loop Early</h3>
 			<p>A flag is a boolean variable (only can be set to true or false). We have encountered the concept of flag when learning "if-else", the car maintenance example. If a flag is used in a while loop to control the loop execution, then the while loop is referred to as a flag-controlled while loop. </p>
 			<h5>Example of using a Flag</h5>
 			<p>One day you encountered the Aladdin's lamp. You wished for a gold marble. 
@@ -146,7 +155,7 @@
 
 			
 			<div class="ponds">
-		    <h3>&#127770; pondering04: Questions to Ask When Designing a While Loop</h3>
+		    <h3>&#127770; ponder05: Questions to Ask When Designing a While Loop</h3>
 			<p>Now that you are familiar with the while loop, make sure that you can distinguish between each control type(whether it is a flag-control while loop, or an event-control while loop) 
 			and when each control structure should be used. A programmer should ask the following questions when designing a loop:</p>
 			<ul>
@@ -160,8 +169,8 @@
 			<!-- https://www.cs.mtsu.edu/~cs1170/manual/lab7/lab7.html -->
 
 
-			<div class="ponds" id="pondering05">
-		    <h3>&#127770; pondering05: DO NOT DRAW THE FLOWCHART OR WRITE THE CODE!</h3>
+			<div class="ponds">
+		    <h3>&#127770; ponder06: DO NOT DRAW THE FLOWCHART OR WRITE THE CODE!</h3>
 			<h5>Look at each of the following problems and answer the questions for each. Do not write code!</h5>
 			<p>Problem-1: Ask the user to type in a word, one character at a time, 
 			   and print how many uppercase letters are contained in the word. 
@@ -192,11 +201,22 @@
 			</ul>
 
 			<h6>exercise: Draw the Flowchart for the above Two Questions.</h6>
+			</div>
 
-		    <div class="ponds" id="pondering06">
-		    <h3>&#127770; Algorithm Design Challenge: Reverse A Number's Digits</h3>
+		    <div class="ponds">
+		    <h3>&#127770; Algorithm Design Challenge-1: Reverse A Number's Digits</h3>
 			<h5>Given a positive integer, output a number whose indigits are in the reversed order of the input</h5>
-			</div> <!-- pondering04 -->
+			<h3>&#127770; Algorithm Design Challenge-2: Record of Dice Throwing</h3>
+			<h5>Write a program which uses a for statement to simulate 100 throws of a die. 
+			    'Keep track' of the number of times each number is thrown using 6 integer variables.
+				After all the throws output the information in a table. For example,
+<pre><code>
+Number   Number of times thrown
+--------------------------------
+  1        34
+  2        27
+</code></pre>
+			</div>
 
 
 
