@@ -1,21 +1,16 @@
 *{  text-decoration: none;}
 
-header{
-    width:100%;}
-
 header ul{
-    position:absolute;
-    margin-left:0;
-}
+  margin-left:-2%;}
 
 header li {
+  list-style-type: none;
   float: left;
-  margin-right: 1.7%;
-  display:inline;}
+  margin-right: 1.7%;}
 
 header h1 {
   color: #DDD;
-  margin: 0 0 1em;
+  margin: 0 0.5em 1em;
   padding: 1.2em 0;
   text-transform: uppercase;}
 
@@ -23,8 +18,47 @@ header h1:hover {
     color: #363639;
     cursor: pointer;}
 
+#course-name{
+  color: rgb(220, 220, 220);
+  font-weight: normal;
+  margin-top: -5em;
+  margin-left: 1em;
+  margin-bottom:1.5em;
+  font-size: large;
+  border-bottom: 1px solid #40404a;
+  width:100%;
+  color: #DDD;}
+
+#course-name:hover{
+  border-bottom: none;}
+
+#imgmeditation{
+  display: none;}
+
+#course-name:hover#imgmeditation{
+    display:block;}
+
+.hover_img p{
+  position:relative;}
+
+.hover_img p span {
+   position:absolute; 
+   left:540px;
+   bottom: -80px;
+   display:none;
+   z-index:99; }
+
+.hover_img p:hover span {
+    display:block; }
+
 #welcome-content{
-  text-align:justify;}
+  border-bottom: 2px solid #40404a;
+  padding-bottom:1em;
+  margin-bottom:1em;
+}
+
+#welcome-content p{
+    text-align:justify;}
 
 body {
   background-color: white;
@@ -45,7 +79,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  border-bottom: 3px solid #40404a;;}
+  border-bottom: 2px solid #40404a;}
 
 h3 {
   font-size: 1.45em; }
@@ -59,13 +93,7 @@ h5 {
   font-size: 1.25em;}
 
 h6 {
-  font-size: 1em; }
-
-ul, ol { /*logo images*/
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+  font-size: 1em;}
 
 button{
   margin-top:1em;
@@ -82,42 +110,7 @@ nav a {
 nav a:hover {
    color: #00b32d;}
 
-#course-name{
-  color: rgb(220, 220, 220);
-  font-weight: normal;
-  margin-top: -5em;
-  margin-bottom:1.5em;
-  font-size: large;
-  border-bottom: 1px solid #40404a;
-  width:100%;
-  color: #DDD;}
-
-#course-name:hover{
-  border-bottom: none;}
-
-#imgmeditation{
-  display:none;}
-
-#course-name:hover#imgmeditation{
-    display:block;}
-
-.hover_img p{
-  position:relative;}
-
-.hover_img p span {
-   position:absolute; 
-   left:540px;
-   bottom: -80px;
-   display:none;
-   z-index:99; }
-
-.hover_img p:hover span {
-    display:block; }
-
-#logocompute{
-  width:70%;}
-
-.leftcolumn{
+.left-column{
     padding-right:2%;}
 
 .main {
@@ -140,14 +133,14 @@ body .sol{
 
 .session,.lect{
   display:flex;
-  border-bottom: 1px solid #d8d8e8;
+  border-bottom: 1px solid #40404a;
   padding-top:10px;
   padding-bottom:20px;}
 
 h4 span{
   color:#00b32d;
   text-decoration-line: underline;
-  text-decoration-color: #40404a;
+  text-decoration-color: #d8d8e8;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.4em;}
 
@@ -169,14 +162,22 @@ h4 span{
 .session-title::before {
   content:"";
   position: absolute;
-  width:36.5%;
-  border-bottom: 1px solid #40404a; /*use this to adjust underlin color and size*/
+  width:590px;
+  border-bottom: 1px solid #d8d8e8; /*use this to adjust underline color and size*/
+  height:1.7em; /*use this to adjust underline position*/
+}
+
+.lect-title::before {
+  content:"";
+  position: absolute;
+  width:590px;
+  border-bottom: 1px solid #d8d8e8; /*use this to adjust underlin color and size*/
   height:1.7em; /*use this to adjust underline position*/
 }
 
 .session,ul{
-    width:100%;
-    margin-left: 4.5em;}
+  width:100%;
+  margin-left: 2.5em;}
 
 .session,li{
   font-size: 14pt;
@@ -192,7 +193,7 @@ h4 span{
 .text02{
   width: 380px;}
 
-div .indentcontent, .epiphany{
+.indentcontent, .epiphany{
   padding-left: 60px;}
 
 .sidebar{
@@ -207,31 +208,22 @@ div .indentcontent, .epiphany{
 .sidebar h3{
   font-size:1.25em;
   align:left;
-  border-bottom: 3px solid #40404a;}
+  border-bottom: 2px solid #40404a;}
 
 .sidebar li{
-  font-size:1em;}
-
-.sidebar ul {
-  margin: 1em 0;}
-
-.links li{
+  font-size:1em;
+  list-style-type: none;
   border-bottom: 1px solid #e8e8ed;
-  width:90%;
-  line-height:2em;}
+  line-height:2em;
+  margin-left:-20%;
+  width:80%;
+
+  }
 
 .links li:hover{
   color: #00b32d;
   background: #eeecec;
   border-bottom: 1px solid #beb6b8;}
-
-.links li span{
-   color:grey;
-   position:relative;
-   top:-25px;
-   left:15px;
-   font-size:1em;
-   border-bottom: 1px solid #e8e8ed;}
 
 .contact li {
   font-weight:100;}
