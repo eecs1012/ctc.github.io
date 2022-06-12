@@ -1,25 +1,30 @@
 *{  text-decoration: none;}
-.logobar{
+
+header{
     width:100%;}
 
-header .logobar li {
+header ul{
+    position:absolute;
+    margin-left:0;
+}
+
+header li {
   float: left;
-  margin-right: 1.7%;}
+  margin-right: 1.7%;
+  display:inline;}
 
-header .title {
-  float: left;
-  width: 100%;}
-
-
-header .coursetitle {
+header h1 {
   color: #DDD;
   margin: 0 0 1em;
   padding: 1.2em 0;
   text-transform: uppercase;}
 
-header .coursetitle:hover {
+header h1:hover {
     color: #363639;
     cursor: pointer;}
+
+#welcome-content{
+  text-align:justify;}
 
 body {
   background-color: white;
@@ -46,7 +51,9 @@ h3 {
   font-size: 1.45em; }
 
 h4 {
-  font-size: 1.25em;}
+  font-size: 1.25em;
+  display:inline;
+  color:#00b32d;}
 
 h5 {
   font-size: 1.25em;}
@@ -57,20 +64,20 @@ h6 {
 ul, ol { /*logo images*/
   margin: 0;
   padding: 0;
-  list-style-type: none;}
+  list-style-type: none;
+}
 
 button{
   margin-top:1em;
-  margin-left:60px;}
+  margin-left:60px;
+}
 
 img {
   margin: 0;
   max-width: 100%;}
 
 nav a {
-  color: #666;
-  display: block;
-  text-transform: lowercase;}
+  color: #666;}
 
 nav a:hover {
    color: #00b32d;}
@@ -111,24 +118,25 @@ nav a:hover {
   width:70%;}
 
 .leftcolumn{
-
     padding-right:2%;}
 
 .main {
   display:flex;
   max-width: 80em;
   margin-left: 0 auto;
-  margin-right: auto;
   margin: 0 3%; 
   margin-top:0 auto;
   margin-bottom:100px;}
   
+pre{
+    font-family: Arial, Helvetica, sans-serif;}
+
 body .sol{
   padding-left: 60px;}
 
  .lect{
      color:rgb(252,9,0);
-  }
+     width:100%;}
 
 .session,.lect{
   display:flex;
@@ -136,42 +144,49 @@ body .sol{
   padding-top:10px;
   padding-bottom:20px;}
 
-
-.session-num {
-  color:#00b32d;
-  }
-
-.session-num span{
+h4 span{
   color:#00b32d;
   text-decoration-line: underline;
-  text-decoration-color:#40404a;
+  text-decoration-color: #40404a;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.6em;}
+  text-underline-offset: 0.4em;}
 
-.session-outline li{
-  font-size: 14pt;
-  padding-left:70px;
-  margin: 0.75em;
-  margin-top: 0;
-  margin-bottom:0;}
+.date{
+   text-decoration-line: none;
+   font-size:0.9em;}
 
 .session-title,.lect-title{
-   margin-left:15%;
-   border-bottom: 1px solid #40404a;}
+   margin-left:3em;}
 
+
+.lect-title{
+   color:#ff8000;
+}
 
 .session-title{
    color:#00bfff;}
 
-.lect-title{
-   color:#ff8000;}
+.session-title::before {
+  content:"";
+  position: absolute;
+  width:36.5%;
+  border-bottom: 1px solid #40404a; /*use this to adjust underlin color and size*/
+  height:1.7em; /*use this to adjust underline position*/
+}
+
+.session,ul{
+    width:100%;
+    margin-left: 4.5em;}
+
+.session,li{
+  font-size: 14pt;
+  margin: 0.75em;
+  margin-top: 0;
+  margin-bottom:0;}
+
 
 #schedule-footnote{
   margin-top:-1%;}
-.dates{
-  font-size:0.9em;
-  color:#00b32d;}
-
 
 
 .text02{
@@ -180,13 +195,14 @@ body .sol{
 div .indentcontent, .epiphany{
   padding-left: 60px;}
 
-
 .sidebar{
-  padding-right:15%;
   padding-left:3%;
+  padding-right:10%;
+  float:right;
   margin-top:0.55%;
   margin-bottom: 10px;
-  margin-left:3%;}
+  margin-left:3%;
+  width:70%;}
 
 .sidebar h3{
   font-size:1.25em;
@@ -199,13 +215,15 @@ div .indentcontent, .epiphany{
 .sidebar ul {
   margin: 1em 0;}
 
-.sidebar a {
+.links li{
   border-bottom: 1px solid #e8e8ed;
-  padding: 4px 6px 2px; }
+  width:90%;
+  line-height:2em;}
 
-.sidebar a:hover {
+.links li:hover{
+  color: #00b32d;
   background: #eeecec;
-  border-bottom: 1px solid #abbaac; }
+  border-bottom: 1px solid #beb6b8;}
 
 .links li span{
    color:grey;
@@ -213,7 +231,7 @@ div .indentcontent, .epiphany{
    top:-25px;
    left:15px;
    font-size:1em;
-}
+   border-bottom: 1px solid #e8e8ed;}
 
 .contact li {
   font-weight:100;}
