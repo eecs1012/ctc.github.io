@@ -1,28 +1,64 @@
-.logobar{
-    width:100%;}
+*{  text-decoration: none;}
 
-header .logobar li {
+header ul{
+  margin-left:-2%;}
+
+header li {
+  list-style-type: none;
   float: left;
   margin-right: 1.7%;}
 
-header .title {
-  float: left;
-  width: 100%;}
-
-
-header .coursetitle {
+header h1 {
   color: #DDD;
-  margin: 0 0 1em;
+  margin: 0 0.5em 1em;
   padding: 1.2em 0;
   text-transform: uppercase;}
 
-header .coursetitle:hover {
+header h1:hover {
     color: #363639;
     cursor: pointer;}
 
-header a{
-    text-decoration:none;
+#course-name{
+  color: rgb(220, 220, 220);
+  font-weight: normal;
+  margin-top: -5em;
+  margin-left: 1em;
+  margin-bottom:1.5em;
+  font-size: large;
+  border-bottom: 1px solid #40404a;
+  width:100%;
+  color: #DDD;}
+
+#course-name:hover{
+  border-bottom: none;}
+
+#imgmeditation{
+  display: none;}
+
+#course-name:hover#imgmeditation{
+    display:block;}
+
+.hover_img p{
+  position:relative;}
+
+.hover_img p span {
+   position:absolute; 
+   left:540px;
+   bottom: -80px;
+   display:none;
+   z-index:99; }
+
+.hover_img p:hover span {
+    display:block; }
+
+#welcome-content{
+  border-bottom: 2px solid #40404a;
+  padding-bottom:1em;
+  margin-bottom:1em;
 }
+
+#welcome-content p{
+    text-align:justify;}
 
 body {
   background-color: white;
@@ -43,83 +79,39 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin-bottom:2%;
-  border-bottom: 3px solid #40404a;}
+  border-bottom: 2px solid #40404a;}
 
 h3 {
-  font-size: 1.2em;
-  margin-top:2%;
-  margin-left:-4%;}
+  font-size: 1.4em;
+  margin-left:-3%;}
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.3em;
+  margin-top:1em;
 }
 
 h5 {
-  font-size: 1em;}
+  font-size: 1.2em;}
 
 h6 {
   font-size: 1em;}
 
-ul, ol { /*logo images*/
-  margin: 0;
-  padding: 0;
-  list-style-type: none;}
-
 button{
-  margin-top:1%;
+  margin-top:1em;
   margin-left:60px;
-  margin-bottom:1%;}
+}
 
 img {
   margin: 0;
   max-width: 100%;}
 
 nav a {
-  color: #666;
-  display: block;
-  text-transform: lowercase;}
+  color: #666;}
 
 nav a:hover {
    color: #00b32d;}
 
-#course-name{
-  color: rgb(220, 220, 220);
-  font-weight: normal;
-  margin-top: -5em;
-  margin-bottom:1.5em;
-  font-size: large;
-  border-bottom: 1px solid #40404a;
-  width:100%;
-  color: #DDD;}
-
-#course-name:hover{
-  border-bottom: none;}
-
-#imgmeditation{
-  display:none;}
-
-#course-name:hover#imgmeditation{
-    display:block;}
-
-.hover_img p{
-  position:relative;}
-
-.hover_img p span {
-   position:absolute; 
-   left:540px;
-   bottom: -80px;
-   display:none;
-   z-index:99; }
-
-.hover_img p:hover span {
-    display:block; }
-
-#logocompute{
-  width:70%;}
-
-.content{
-    width:100%;
+.left-column{
     padding-right:2%;}
 
 .main {
