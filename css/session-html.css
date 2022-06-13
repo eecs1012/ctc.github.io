@@ -102,6 +102,7 @@ img {
   margin: 0;
   max-width: 100%;}
 
+
 nav a {
   color: #666;}
 
@@ -144,8 +145,12 @@ input{
    width: 400px;
 }
 
-div .indentcontent, .epiphany{
-  padding-left: 60px;}
+.ponds-content{
+    padding-left:5%;
+}
+
+.indentcontent, .epiphany{
+  padding-left: 5%;}
 
 .epiphanyheader:hover{
     cursor:pointer;
@@ -154,24 +159,6 @@ div .indentcontent, .epiphany{
     font-size:1.15em;
     padding-left:40px;
 }
-
- #pondering04 label{
- font-size:1.15em;
- font-weight:bold;
- }
- 
-.externalpage{
-    height:350px;
-    overflow:hidden;}
-
-
-nav a {
-  color: #666;
-  display: block;
-  text-transform: lowercase;}
-
-nav a:hover {
-    color: #ec008c;}
 
 
 body {
@@ -183,35 +170,26 @@ body {
   padding-left:3%;
   margin-top:0.55%;
   margin-bottom: 10px;
-  width:30%;}
+  width:30%;
+}
 
 .sidebar h3{
   font-size:1.25em;
   align:left;
-  border-bottom: 3px solid #40404a;}
+  border-bottom: 2px solid #40404a;}
 
 .sidebar li{
-  font-size:1em;}
-
-.sidebar ul {
-  margin: 1em 0;}
-
-.sidebar a {
+  font-size:1em;
+  list-style-type: none;
   border-bottom: 1px solid #e8e8ed;
-  padding: 4px 6px 2px; }
+  line-height:2em;
+  width:80%;
+  }
 
-.sidebar a:hover {
+.links li:hover{
+  color: #00b32d;
   background: #eeecec;
-  color:#00b32d;
-  border-bottom: 1px solid #abbaac; }
-
-.links li span{
-   color:grey;
-   position:relative;
-   top:-25px;
-   left:15px;
-   font-size:1em;
-}
+  border-bottom: 1px solid #beb6b8;}
 
 .contact li {
   font-weight:100;}
