@@ -4,7 +4,7 @@
     <title id="pagetitle">EECS1012: Computational Meditation Club</title>
 	<meta name="author" content="Xuan Chen">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./css/session-html.css" media="screen" >
+	<link rel="stylesheet" href="./css/s-html.css" media="screen" >
 	<script src="./js/s-html/htmlDef.js"></script>
     <script src="./js/s-html/htmlStructure.js"></script>
 	<script src="./js/s-html/langAtt.js"></script>
@@ -62,7 +62,7 @@
 		    <h3>&#127770; ponder-1: Definition of HTML</h3>
 			<div class="ponds-content">
 			  <p>what do each letter of HTML represent?</p>
-			  <form>
+			  <form id="htmlForm">
 				<label for="h">H: </label>
 			    <input type="text" class="txtfield" id="h" placeholder="hint: 5 letters" required><br>
 				<label for="t">T: </label>
@@ -80,8 +80,8 @@
 			<div class="ponds">
 			<h3>&#127770; ponder-2: the Basic Structure of the HTML Template</h3>
 			  <div class="ponds-content">
-			    <p>hint1: It consists of below tags: html, head, title, body</p>
-			    <p>hint2: Remember to close all tags</p>
+			    <p>Hint-1: It consists of below tags: html, head, title, body</p>
+			    <p>Hint-2: Remember to close all tags</p>
 			    <form>
 				  <input type="text" class="text02" id="htmlopen" placeholder="an open tag that is the container for all other HTML elements" required><br>
 				  <input type="text" class="text02" id="headopen" placeholder="an open tag" required><br>
@@ -123,22 +123,22 @@
 			<div class="ponds-content">
 			  <form>
 		        <input type="checkbox" id="doctype">
-			    <label for="doctype">01. Always declare the document type.</label>
+			    <label for="doctype">1. Always declare the document type.</label>
 			    <p id="doctypejudge"></p>
 			    <p id="doctypereason"></p>
 
 			    <input type="checkbox" id="lowercase">
-			    <label for="lowercase">02. use lower case for elements, attributes, etc.</label>
+			    <label for="lowercase">2. use lower case for elements, attributes, etc.</label>
 			    <p id="lowercasejudge"></p>
 			    <p id="lowercasereason"></p>
 
 			    <input type="checkbox" id="space">
-			    <label for="space">03. like coding languages, space is needed in attribute values or around "="</label>
+			    <label for="space">3. like coding languages, space is needed in attribute values or around "="</label>
 			    <p id="spacejudge"></p>
 			    <p id="spacereason"></p>
 
 			   <input type="checkbox" id="altimg">
-			   <label for="altimg">04. provide alt attribute for img element </label>
+			   <label for="altimg">4. provide alt attribute for img element </label>
 			   <p id="altimgjudge"></p>
 			   <p id="altimgreason"></p>
 			 </form>
