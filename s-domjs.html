@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title id="pagetitle">EECS1012: Computational Meditation Club</title>
+	<meta name="author" content="Xuan Chen">
+	<link rel="stylesheet" href="./css/s-domjs.css" media="screen" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./js/s-domjs/solDom.js"></script>
+    <script src="./js/s-domjs/domownwords.js"></script>
+	<script src="./js/s-domjs/scriptlink.js"></script>
+	<script src="./js/s-domjs/buttype.js"></script>
+    <script src="./js/s-domjs/solonclick.js"></script>
+	<script src="./js/s-domjs/jschange.js"></script>
+  </head>
+	
+  <body>
+
+	<header>
+	   <!--TODO: change the url to 1012 course page-->
+	   <!--note: a href= is the only exception that an inline element can wrap a container element-->
+	  <a href="index.html">
+	    <div class="logobar">
+		  <ul>
+		    <li class="logo">
+			  <img src="./img/index/logohtmllarge.png" alt="html5logo" width="100" height="26">
+			</li>
+		    <li class="logo">
+			  <img src="./img/index/logocsslarge.png" alt="css3logo" width="100" height="26">
+			</li>
+			<li class="logo">
+			  <img src="./img/index/logojslarge.png" alt="jslogo" width="100" height="26">
+			</li>
+			<li id="logocompute">
+			  <img src="./img/index/logocomputational.png" alt="logodefine" width="450 height="32">
+			</li>
+		  </ul>
+	    </div> <!-- class="logobar" -->
+	  </a>
+
+      <a href="index.html">
+      <div class="hover_img">
+	  <h1 class="coursetitle">Computational Meditation Club</h1>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
+      </div>
+      </a>
+    </header>
+
+	<div class="main">
+        <section class="leftcolumn">
+        <div class="lecturereview">
+	    <h2>&#127773; Lecture Highlights</h2>
+
+		  <div class="indentcontent">
+            <div class="ponds">
+		    <h3>&#127770; ponder-1: What Is DOM?</h3>
+			<p>How would you like to use your own words to explain what is DOM?</p>
+			<button type="button" onclick="domOwnWords()" onload="domOwnWords)" action="#">check answers</button>
+			<p class="sol" id="domOwnWords"></p>
+			<img id="domtree" style="visibility: hidden; width:0px; height:0px;" src="./img/session02img/domtree.png"></img>
+
+			<p>As far as the contents covered in the lecture, what concepts can be mapped to Document and Object in terms of the Document Object Mode?</p>
+			<label for="docu" style="display:inline;">"Document" can be mapped by</label>
+			<input type="text" id="docu"><br>
+			<label for="obj">"Object" can be mapped by</label>
+			<input type="text" id="obj">
+			<p class="sol" id="soldom"></p>
+
+			<button type="button" onclick="solDom()" onload="solDom()" action="#">check answers</button>
+		    </div>
+
+		    <div class="ponds">
+		    <h3>&#127770; ponder-2: View the DOM Tree from HTML Text</h3>
+            <p>Let's take a closer look at this HTML code to better understand the DOM tree structure.</p>
+		    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+ &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&lt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&lt;
+    &lt;title&gt;DOM tree structure&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body>
+    &lt;h1&gt;DOM tree structure&lt;/h1&gt;
+	&lt;h2&gt;Learn about the DOM&lt;/h2&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre></code>
+		    <p>Here is another way to visualize this tree of nodes.</p>
+		    <img id="doctree2" src="./img/session02img/doctree2.jpg">
+		    <p>We can access these elements in the document and make changes to them using JavaScript.</p>
+            </div>
+
+		   <div class="ponds">
+		   <h3>&#127770; ponder-3: Anatomy of DOM Tree Node</h3> 
+		   <p>Which part of an element can JavaScript change?</p>
+		   <img id="jschangeimg" src="./img/session02img/jschange.gif">
+		   <img id="inlinestyleimg" src="./img/session02img/inlinestyle.png">
+		   <form>
+		    <input type="checkbox" id="attribute-name">
+		    <label for="attribute-name">attribute name</label>
+		    <p id="attribute-namejudge"></p>
+
+		    <input type="checkbox" id="attribute-value">
+		    <label for="attribute-value">attribute value</label>
+		    <p id="attribute-valuejudge"></p>
+
+		    <input type="checkbox" id="enclosed-tag-content">
+		    <label for="enclosed-tag-content">enclosed tag content</label>
+		    <p id="enclosed-tag-contentjudge"></p>
+
+		    <input type="checkbox" id="style-value">
+		    <label for="style-value">style value</label>
+		    <p id="style-valuejudge"></p>
+		   </form>
+		   <button onload="jsChange()" onclick="jsChange()">submit</button> 
+		   <p class="sol" id="solJsChange"></p>
+		   <p class="sol" id="solInline"></p>
+
+			<h5>Observe the code and its DOM tree image, try to understand the inner connection between them</h5>
+			<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="js,result" data-slug-hash="dyddQeg" data-editable="true" data-user="eecs1012" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/dyddQeg">
+			 css-dom-ul-li</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			<img src="./img/session02img/domtreeul.png">
+
+		   </div>
+
+
+			<div  class="ponds">
+			<h3>&#127770; ponder-4: Behind the scene: Button</h3>
+			<p>HTML tags use key-value pairs, or attributes, to modify their functionality. 
+			   Here we are going to explore the element <code>button</code> to get familiar with how element becomes interactive.<br>
+			</p>
+			<h6>Q1: Will the below element button submit the form?</h6>
+		    <pre><code>
+&lt;form&gt;
+&lt;button&gt;Will I submit the form?&lt;/button&gt;
+&lt;/form&gt;
+</pre></code>
+			<h6>Q2: Will the below element button submit the form?</h6>
+<pre><code>
+&lt;form&gt;
+&lt;button type='button'&gt;Will I submit the form?&lt;/button&gt;
+&lt;/form&gt;</pre></code>
+
+            <button type="button" onclick="butType()" onload="butType()" action="#">Check Answer</button>
+			<p class="sol" id="solbuttype"></p>
+			<p class="sol" id="solbutreason"></p>
+			<a href="https://codepen.io/clairecodes/pen/JpzwLv" target="_blank"><p>Have fun in codePen</p></a>
+            <!--reference: https://dev.to/clairecodes/why-its-important-to-give-your-html-button-a-type-58k9 -->
+             </div>
+
+			<div class="ponds">
+			<h3>&#127770; ponder-5</h3> 
+			<p>Besides a <code>button</code>, what else elements can also submit a form?</p>
+			<a href="https://www.w3schools.com/jsref/event_onclick.asp" target="_blank"><p>Hint: What elements can have the event <code>onclick="myFunction()</code>?"</p></a>
+			<p class="sol" id="solonclick"></p>
+			<form>
+		      <input type="checkbox" id="tagspan">
+			  <label for="tagspan">&lt;span&gt;&lt;/span&gt;</label>
+			  <p id="tagspanjudge"></p>
+
+			  <input type="checkbox" id="taga">
+			  <label for="taga">&lt;a&gt;&lt;/a&gt;</label>
+			  <p id="tagajudge"></p>
+			  <p id="tagareason"></p>
+
+			  <input type="checkbox" id="tagcite">
+			  <label for="tagcite">&lt;cite&gt;&lt;/cite&gt;</label>
+			  <p id="tagcitejudge"></p>
+
+			  <input type="checkbox" id="tagstrong">
+			  <label for="altimg">&lt;strong&gt;&lt;/strong&gt;</label>
+			  <p id="tagstrongjudge"></p>
+			</form>
+			<button onload="solOnClick()" onclick="solOnClick()">submit</button> 
+		    </div>
+
+		    <div  class="ponds">
+			<h3>&#127770; ponder-6</h3> 
+			  <p>Fill out the correct code to link a javaScript file to the s02.html.<br> Given a javaScript file whose name is "blasting.js",<br> and the file path is shown as the image below.</p>
+              <img id="jslink.png" style="display:block;"src="./img/session02img/jslink.png">
+			  <label class="hint">hint 1: what is the element name to wrap the path?</label>
+			  <input type="text" id="scripttag">
+              <label class="hint">hint 2: What is the path starting from the html to access the js file?</label>
+              <input type="text" id="relativepath"><br>
+			  <label for="inputjslinkpath">Combine the path and tag, we get the complete code:</label>
+			  <input type="text" id="inputjslinkpath" >
+			  <p class="sol" id="solscriptlink">solhere</p>
+              <button type="button" onclick="scriptlink()" onload="scriptlink()" action="#">Check Answer</button>
+			</div>
+
+		    <div  class="ponds">
+			<h3>&#127770; ponder-7: Use DOM javaScript to change CSS</h3>
+
+
+
+		</div> <!-- class="indentcontent" -->
+        </div> <!-- class="lecturereview" -->
+
+        <div class="discussion">
+		<p><br></p>
+		<h2>&#127773; Open Up Your Mind</h2>
+		  <div class="indentcontent">
+          <h3>&#127770; Have you learned JavaScript before?</h3>
+		  <p>What is your favourite tool when learning or using JavaScript? Please share your experience~</p>
+		  </div>  <!-- class="indentcontent" -->
+		</div> <!-- class="discussion" -->
+
+		</section> <!-- leftcolumn -->
+
+        <div class="sidebar">
+		  <div class="links">
+		  <h3>links</h3>
+		  <nav>
+			<ul>
+			  <li><h6><a href="https://javascript.info/dom-nodes" target="_blank">DOM tree</a></h6></li>
+			  <li><h6><a href="https://javascript.info/basic-dom-node-properties#innerhtml-the-contents" target="_blank">innerHTML: the contents</a></h6></li>
+			  <li><h6><a href="https://javascript.info/searching-elements-dom#document-getelementbyid-or-just-id" target="_blank">document.getElementById</a></h6></li>
+
+		   	  <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools HTML</a></li>
+		      <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools CSS</a></li>
+		      <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools JavaScript</a></li>
+		      <li><a href="https://validator.w3.org/images/w3c.png" target="_blank">W3C Validator</a></li>
+		    </ul>
+		  </nav>
+	   </div>
+
+       <div class="contact">
+	     <h3>Contact</h3>
+		 <nav>
+		 <ul>
+		   <li>Course instructor:<br/><span>Hui Wang</span></li>
+		   <li>created by:<br/><span>Xuan Chen</span></li>
+		   <li>mail to:<br/><span>eecs1012ctc@gmail.com</span></li>
+		 </ul>
+		 </nav>
+	   </div> <!-- contact -->
+	   </div> <!-- sidebar -->
+    </div> <!-- class="main" -->
+  </body>
+</html>
