@@ -51,14 +51,16 @@
 	  </a>
     </header>
 	
-		<div class="main">
-		  <div class="left-column">
+	  <div class="main">
+		<section class="left-column">
         <div class="lecturereview">
-	    <h2>&#127773;&nbsp;Lecture Highlights</h2>
+	    <h2>&#127773; Lecture Highlights</h2>
+
 		  <div class="indentcontent">
 
             <div  class="ponds">
 		    <h3>&#127770; ponder-1: Definition of HTML</h3>
+			<div class="ponds-content">
 			  <p>what do each letter of HTML represent?</p>
 			  <form>
 				<label for="h">H: </label>
@@ -71,37 +73,40 @@
 				<input type="text" class="txtfield" id="l" value="language">
 			  </form> 
 			  <button type="button" onclick="htmlDef()" action="#" method="GET">Submit</button>
-			  <div class="sol" id="sol01">sol01</div>
+			  <div class="sol" id="sol01"></div>
+			  </div>
              </div>
 
 			<div class="ponds">
 			<h3>&#127770; ponder-2: the Basic Structure of the HTML Template</h3>
-			  <p>hint1: It consists of below tags: html, head, title, body</p>
-			  <p>hint2: Remember to close all tags</p>
-			  <form>
-				<input type="text" class="text02" id="htmlopen" placeholder="an open tag that is the container for all other HTML elements" required><br>
-				<input type="text" class="text02" id="headopen" placeholder="an open tag" required><br>
-				<input type="text" class="text02" id="headopen" placeholder="an open tag" required><br>
-				<input type="text" class="text02" id="titles" placeholder="a pair of open and closing tags" required><br>
-				<input type="text" class="text02" id="headclose"  placeholder="a closing tag" required><br>
-				<input type="text" class="text02" id="bodyclose" placeholder="a closing tag" required><br>
-				<input type="text" class="text02" id="htmlclose" placeholder="a closing tag" required><br>
-			  </form> 
-			  <button type="button" onclick="htmlStructure()" action="#" method="GET">Submit</button>
-			  <div class="sol" id="sol02">sol02</div>
+			  <div class="ponds-content">
+			    <p>hint1: It consists of below tags: html, head, title, body</p>
+			    <p>hint2: Remember to close all tags</p>
+			    <form>
+				  <input type="text" class="text02" id="htmlopen" placeholder="an open tag that is the container for all other HTML elements" required><br>
+				  <input type="text" class="text02" id="headopen" placeholder="an open tag" required><br>
+				  <input type="text" class="text02" id="headopen" placeholder="an open tag" required><br>
+				  <input type="text" class="text02" id="titles" placeholder="a pair of open and closing tags" required><br>
+				  <input type="text" class="text02" id="headclose"  placeholder="a closing tag" required><br>
+				  <input type="text" class="text02" id="bodyclose" placeholder="a closing tag" required><br>
+				  <input type="text" class="text02" id="htmlclose" placeholder="a closing tag" required><br>
+			    </form> 
+			    <button type="button" onclick="htmlStructure()" action="#" method="GET">Submit</button>
+			    <div class="sol" id="sol02"></div>
+				</div>
               </div>
 
-			<div  class="ponds">
+			<div class="ponds">
 			<h3>&#127770; ponder-3</h3> 
-			  <p>Do you remember if there are any attribute inside the &lt;html&gt;tag, after html</p>
-              <form>
-				<input type="radio" name="langatt" id="wrongLanguage" value="wrong">
-				<label for="language">language="en"</label><br>
-				<input type="radio" name="langatt" id="lang" value="vallang">
-				<label for="lang">lang="en"</label><br>
-			  </form>
-
-              <button onload="langAtt()" onclick="langAtt()">submit</button>
+			  <div class="ponds-content">
+			    <p>Do you remember if there are any attribute inside the &lt;html&gt;tag, after html</p>
+                <form>
+				  <input type="radio" name="langatt" id="wrongLanguage" value="wrong">
+				  <label for="language">language="en"</label><br>
+				  <input type="radio" name="langatt" id="lang" value="vallang">
+				  <label for="lang">lang="en"</label><br>
+			    </form>
+                <button onload="langAtt()" onclick="langAtt()">submit</button>
 			  <div class="sol" id="sol03"></div>
 
 			  <p><br>Do you know its functionality? </p>
@@ -110,67 +115,70 @@
 
 	          <h3 class="epiphanyheader" onclick="epiphanylang()">&#127748; Epiphany(not required in this course)</h3>
               <h4 id="eptitle"><a href="http://www.thesempost.com/google-ignores-html-lang-tag-indexing-search-results/" target="_blank">Why Google Ignores HTML Lang Attribute for Indexing in Search Results</h4></a>
-			 </div>
+			  </div>
+            </div>
 
 			<div  class="ponds">
 			<h3>&#127770; ponder-4: Tell the Truth about HTML Coding Style</h3>
-			<form>
-		      <input type="checkbox" id="doctype">
-			  <label for="doctype">01. Always declare the document type.</label>
-			  <p id="doctypejudge"></p>
-			  <p id="doctypereason"></p>
+			<div class="ponds-content">
+			  <form>
+		        <input type="checkbox" id="doctype">
+			    <label for="doctype">01. Always declare the document type.</label>
+			    <p id="doctypejudge"></p>
+			    <p id="doctypereason"></p>
 
-			  <input type="checkbox" id="lowercase">
-			  <label for="lowercase">02. use lower case for elements, attributes, etc.</label>
-			  <p id="lowercasejudge"></p>
-			  <p id="lowercasereason"></p>
+			    <input type="checkbox" id="lowercase">
+			    <label for="lowercase">02. use lower case for elements, attributes, etc.</label>
+			    <p id="lowercasejudge"></p>
+			    <p id="lowercasereason"></p>
 
-			  <input type="checkbox" id="space">
-			  <label for="space">03. like coding languages, space is needed in attribute values or around "="</label>
-			  <p id="spacejudge"></p>
-			  <p id="spacereason"></p>
+			    <input type="checkbox" id="space">
+			    <label for="space">03. like coding languages, space is needed in attribute values or around "="</label>
+			    <p id="spacejudge"></p>
+			    <p id="spacereason"></p>
 
-			 <input type="checkbox" id="altimg">
-			 <label for="altimg">04. provide alt attribute for img element </label>
-			 <p id="altimgjudge"></p>
-			 <p id="altimgreason"></p>
-			</form>
+			   <input type="checkbox" id="altimg">
+			   <label for="altimg">04. provide alt attribute for img element </label>
+			   <p id="altimgjudge"></p>
+			   <p id="altimgreason"></p>
+			 </form>
 			 <button onload="styleCheckBox()" onclick="styleCheckBox()">submit</button>
-			 </div>
-
-			<div class="ponds">
-			<h3>&#127770; ponder-5: A Special In-line Element</h3> 
-			<p>Which of below inline element can wrap a block?</p>
-			<p>Hint: You can peep at the source code of the header this page</p>
-			<form>
-		      <input type="checkbox" id="tagspan">
-			  <label for="tagspan">&lt;span&gt;&lt;/span&gt;</label>
-			  <p id="tagspanjudge"></p>
-
-			  <input type="checkbox" id="taga">
-			  <label for="taga">&lt;a&gt;&lt;/a&gt;</label>
-			  <p id="tagajudge"></p>
-			  <p id="tagareason"></p>
-
-			  <input type="checkbox" id="tagcite">
-			  <label for="tagcite">&lt;cite&gt;&lt;/cite&gt;</label>
-			  <p id="tagcitejudge"></p>
-
-			 <input type="checkbox" id="tagstrong">
-			 <label for="tagstrongjudge">&lt;strong&gt;&lt;/strong&gt;</label>
-			 <p id="tagstrongjudge"></p>
-			</form>
-			<button onload="inlineWrapBlock()" onclick="inlineWrapBlock()">submit</button> 
 			</div>
+		  </div>
 
-          </div <!-- class="indentcontent" -->
-        </div> <!-- class="lecturereview" -->
+		  <div class="ponds">
+			<h3>&#127770; ponder-5: A Special In-line Element</h3> 
+			<div class="ponds-content">
+			  <p>Which of below inline element can wrap a block?</p>
+			  <p>Hint: You can peep at the source code of the header this page</p>
+			  <form>
+		        <input type="checkbox" id="tagspan">
+			    <label for="tagspan">&lt;span&gt;&lt;/span&gt;</label>
+			    <p id="tagspanjudge"></p>
 
-		<div  class="ponds">
-		<h3>&#127770; ponder-06: Difference between Inline Element and Block Element</h3> 
-		<p>Here are two images that concludes the major difference between an inline element and a block element.<br>Read carefully and fill out the form.</p>
-		<img id="inlineblockimg" src="./img/session-html/inlineblockimg.jpg">
-			<form>
+			    <input type="checkbox" id="taga">
+			    <label for="taga">&lt;a&gt;&lt;/a&gt;</label>
+			    <p id="tagajudge"></p>
+			    <p id="tagareason"></p>
+
+			    <input type="checkbox" id="tagcite">
+			    <label for="tagcite">&lt;cite&gt;&lt;/cite&gt;</label>
+			    <p id="tagcitejudge"></p>
+
+			   <input type="checkbox" id="tagstrong">
+			   <label for="tagstrongjudge">&lt;strong&gt;&lt;/strong&gt;</label>
+			   <p id="tagstrongjudge"></p>
+			  </form>
+			  <button onload="inlineWrapBlock()" onclick="inlineWrapBlock()">submit</button> 
+			</div>
+		  </div>
+
+		  <div class="ponds">
+		  <h3>&#127770; ponder-6: Difference between Inline Element and Block Element</h3>
+			<div class="ponds-content">
+		      <p>Here are two images that concludes the major difference between an inline element and a block element.<br>Read carefully and fill out the form.</p>
+		      <img id="inlineblockimg" src="./img/session-html/inlineblockimg.jpg">
+			  <form>
 				<label for="inlinedirection">inline elements are laid out </label>
 			    <input type="text" class="txtfield" id="inlinedirection" required><br>
 
@@ -185,7 +193,11 @@
 
 				<input type="text" class="txtfield" id="inline-block" required>
 				<label for="inline-block"> makes a block element that's laid out horizontally like an inline element.'</label><br>
-			  </form> 
+			  </form>
+		    </div>
+		  </div>
+
+        </div> <!-- class="lecturereview" -->
 
         <div class="discussion">
 		<p><br></p>
@@ -196,9 +208,8 @@
 		
           <h3>&#127770;&nbsp;Have you learned HTML or CSS before?</h3>
 		  <p>What is your favourite tool when learning or writing them? Please share your experience~</p>
-		  </div>  <!-- class="indentcontent" -->
 		</div> <!-- class="discussion" -->
-
+		</div>  <!-- class="indentcontent" -->
 		</section> <!-- leftcolumn -->
 
         <div class="sidebar">
