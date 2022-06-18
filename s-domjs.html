@@ -51,8 +51,75 @@
 	    <h2>&#127773; Lecture Highlights</h2>
 
 		  <div class="indentcontent">
-            <div class="ponds">
-		    <h3>&#127770; ponder-1: What Is DOM?</h3>
+
+		  <div class="ponds">
+		    <h3>&#127770; Intro to Memory-1: Data Types, Variable and Stack</h3>
+
+		    <h6>Everything Needs a Memory</h6>
+            <p>The JavaScript Engine executes our code line by line, and let the code do the job. To make the engine work properly, we need two things:
+            <p>call stack: a place to store and write information -- variables, objests.</p>
+		    <p>memory heap: to keep track of what is happening to the code.</p>
+            <p>Let's take a closer look to the memory</p>
+            <h6>Each Memory Cell Has an Address</h6>
+            <img src="./img/s-jsmemo/memo01.png" width="800" height="550">
+		    <img src="./img/s-jsmemo/memo02.png" width="800" height="550">
+		    <img src="./img/s-jsmemo/memo03.png" width="800" height="550">
+		    <img src="./img/s-jsmemo/memo04.png" width="800" height="550">
+
+			<h3>&#127770; How to Store Values into Memory</h3>
+			<p>Let's calculate the area of a rectangle lot.</p>
+			<img a href src="./img/s-jsmemo/var01.png">
+			<p>the integer value 40 and 100 locate in some arbitrary memory cell.</p>
+			<img a href src="./img/s-jsmemo/var02.png">
+			<p>The variable "width" and "height" store the address of 40 and 100, rather than the value of 40 and 100.
+			<img a href src="./img/s-jsmemo/var03.png">
+			<p>In some sense, variable "width" and "height" point to memory address of x56 and x09<br>
+			This is how JavaScript keeps track of values inside memory cells, via a relationship of mapping between variable names and address.</p>
+			<img a href src="./img/s-jsmemo/var04.png">
+			<p>We can also assign the expression of these two variables to a new variable, <code>lotArea</code></p>
+			<img a href src="./img/s-jsmemo/var05.png">
+			<p>When assigning new value to an existing variable, that variable no longer points to the old value, 
+		    rather, it stores the address of the new value.</p>
+			<img a href src="./img/s-jsmemo/var06.png">
+			<h6>exercise-1: modify the last diagram, assume value 120 locates in the address x10, and the variable height is assigned 120.</h6>
+			<h6>exercise-2: if <code>alert(lotArea);</code>, Will the output value be <code>360</code>?(i.e. 120 * 30) Why?</h6>
+
+			<h3>Visualize the code</h3>
+			<iframe width="850" height="550" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%0Avar%20width%20%3D%2040%3B%0Avar%20height%20%3D%20100%3B%0Avar%20lotArea%20%3D%20width%20*%20height%3B%0Aconsole.log%28%22logArea%3D%22%2BlotArea%29%3B%0A%0Awidth%20%3D%2030%3B%0Aheight%20%3D%20120%3B%0Aconsole.log%28%22after%20new%20assignment%20of%20width%20and%20height,%20lotArea%3D%22%2BlotArea%29%3B%0A%0AlotArea%20%3D%20width%20*%20height%3B%0Aconsole.log%28%22after%20new%20assignment%20of%20lotArea,%20lotArea%3D%22%2BlotArea%29%3B&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false">
+			</iframe>
+
+			<h3>&#127770; Ruels for Executing an Assignment Statement</h3>
+			<h6>Declar a Variable:</h6>
+			<code>var variableName</code>
+			<h6>Assignment statement:</h6>
+			<code>variableName = expression</code>
+			<h6>1. Evaluate the expression on the right of the = sign to produce a value.<br>
+			This value has a memory address.</h6>
+			<h6>2. Store the memory address of the value in the variable on the left of the =.</h6>
+          </div>
+
+          <div class="ponds">
+            <h3>&#127770; Stack - A Place Storing Static Data</h3>
+		    <p><span>A stack</span> is a data structure being used to store static data. <span>Static data</span> is the data that the engine knows the size at compile time.
+		    Since the engine knows that the size will not change, it allocates a fixed amount of memory for each value.		
+			<ul>
+		      <li><span>primitives</span>: string, number, boolean, undefined, null</li>
+			  <li><span>references<span>: pointers to objects and functions</li>
+			</ul>
+		    <img src="./img/s-jsmemo/memo-stack-variables.png" width="800" height="550">
+            <p>We will introduce the concept of Heap later when dealing with Objects and function calls.</p>
+
+            <h6>Memory Life Cycle</h6>
+		    <p>Every time we assign a variable, the memory for that always goes through the same following stages:</p>
+		    <img src="./img/s-jsmemo/memo-life-cycle.png" width="800" height="250">
+
+		    <p>Allocating memory is the process of reserving space in memory</p>
+		    <p>Using memory is something we do explicitly in our code: reading and writing to memory is nothing else than reading or writing from or to a variable. For exmaple, assigning a value to a variable.</p>
+		    <p>Releasing memory frees up space, and allows space to be used for other purposes.</p>
+		  </div>
+
+          <div class="ponds">
+		    <h3>&#127770; ponder-2: What Is DOM?</h3>
 			<p>How would you like to use your own words to explain what is DOM?</p>
 			<button type="button" onclick="domOwnWords()" onload="domOwnWords)" action="#">check answers</button>
 			<p class="sol" id="domOwnWords"></p>
@@ -66,10 +133,10 @@
 			<p class="sol" id="soldom"></p>
 
 			<button type="button" onclick="solDom()" onload="solDom()" action="#">check answers</button>
-		    </div>
+		  </div>
 
 		    <div class="ponds">
-		    <h3>&#127770; ponder-2: View the DOM Tree from HTML Text</h3>
+		    <h3>&#127770; ponder-3: View the DOM Tree from HTML Text</h3>
             <p>Let's take a closer look at this HTML code to better understand the DOM tree structure.</p>
 		    <pre><code>
 &lt;!DOCTYPE html&gt;
