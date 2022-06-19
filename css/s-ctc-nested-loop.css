@@ -253,7 +253,7 @@ embed{
     display:none;
 }
 
-#comment-flowchart-2 {
+#comment-flowchart-2:target{
     display: inline-block;
 }
 
@@ -265,3 +265,7 @@ embed{
     display: inline-block;
 }
 
+
+#sol-variable-name:target{
+    display: inline-block;
+}
