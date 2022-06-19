@@ -197,7 +197,7 @@ body {
 
 .sidebar h3{
   font-size:1.25em;
-  align:left;
+  text-align:left;
   border-bottom: 3px solid #40404a;}
 
 .sidebar li{
@@ -253,17 +253,15 @@ embed{
     display:none;
 }
 
-#sol-while-no-initial:target{
-    display:block;
+#comment-flowchart-2 {
+    display: inline-block;
 }
 
-#sol-while-condition-mismatch:target{
-    display:block;
-}
-#sol-while-no-modification:target{
-    display:block;
+#sol-reverse-colrow:target {
+    display: inline-block;
 }
 
-#flag-marble-gold-sol:target{
-    display:block;
+#sol-variable-name:target {
+    display: inline-block;
 }
+
