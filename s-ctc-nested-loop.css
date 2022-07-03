@@ -253,7 +253,7 @@ embed{
     display:none;
 }
 
-#comment-flowchart-2:target{
+#comment-flowchart-2 {
     display: inline-block;
 }
 
@@ -261,11 +261,19 @@ embed{
     display: inline-block;
 }
 
-#sol-variable-name:target {
-    display: inline-block;
+
+#sol-while-no-initial:target {
+    display: block;
 }
 
 
-#sol-variable-name:target{
-    display: inline-block;
+#sol-while-condition-mismatch:target{
+    display:block;
+}
+#sol-while-no-modification:target{
+    display:block;
+}
+
+#flag-marble-gold-sol:target{
+    display:block;
 }

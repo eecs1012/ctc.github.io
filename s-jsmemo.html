@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title id="pagetitle">EECS1012: Computational Meditation Club</title>
+	<meta name="author" content="Xuan Chen">
+	<link rel="stylesheet" href="./css/session-jsmemo.css" media="screen" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./js/sctc1/soltablediff.js"></script>
+  </head>
+	
+  <body>
+
+	<header>
+	  <a href="index.html">
+	    <div class="logobar">
+		  <ul>
+		    <li class="logo">
+			  <img src="./img/index/logohtmllarge.png" alt="html5logo" width="100" height="26">
+			</li>
+		    <li class="logo">
+			  <img src="./img/index/logocsslarge.png" alt="css3logo" width="100" height="26">
+			</li>
+			<li class="logo">
+			  <img src="./img/index/logojslarge.png" alt="jslogo" width="100" height="26">
+			</li>
+			<li id="logocompute">
+			  <img src="./img/index/logocomputational.png" alt="logodefine" width="450" height="32">
+			</li>
+		  </ul>
+	    </div> <!-- class="logobar" -->
+	  </a>
+
+      <a href="index.html">
+      <div class="hover_img">
+	  <h1 class="coursetitle">Computational Meditation Club</h1>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
+      </div>
+      </a>
+    </header>
+
+	<div class="main">
+        <section class="leftcolumn">
+        <div class="lecturereview">
+	    <h2>&#127773;&nbsp;Lecture Highlights</h2>
+		<p>The first part of this session will be an in-depth exploration of array. For the rest part of the session, I'm not going to repeat Dr. Hui's lecture and slides as they are already super detailed.
+		Rather, I would like to invite you to go through my favourite book that introduces JavaScript syntax: <a href="https://javascript.info/">The Modern JavaScript Tutorial"</a>.
+		It contains some advanced interpretation of the basic syntax.A list of links of the book's content, which fits the requirements of this course, will be offered.
+
+		  <div class="indentcontent">
+
+			 <h3>&#127770; JavaScript Array: A Sparse Array</h3>
+			 <h6>Tell the Truth</h6>
+			 <div><input type="checkbox" id="data-type"><label for="data-type">1. An Array in javascript can only store elements with same data type.</div>
+			 <div><input type="checkbox" id="fix-size"><label for="fix-size">2. Arrays in javascript are fixed in size when created.</div>
+			 <div><input type="checkbox" id="data-type"><label for="data-type">3. All elements in a JavaScript Array lie in contiguous Memory Allocation.</div>
+			 <p>check the solution</p>
+
+			 <p>2. Arrays in javascript are dynamic in size, whether you define the size initially or not.</p>
+			 <p class="codepen" data-height="412" data-theme-id="dark" data-default-tab="js,result" data-slug-hash="wvyQZdp" data-editable="true" data-user="eecs1012" style="height: 412px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			 <span>See the Pen <a href="https://codepen.io/eecs1012/pen/wvyQZdp">
+			 Untitled</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			 on <a href="https://codepen.io">CodePen</a>.</span>
+			 </p>
+			 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+			 <p>3. The memory allocation behind the scene</p>
+			 <img src="./img/s-jsmemo/memoryreallocate.png" width="900" height="700">
+
+			<img src="./img/s-jsmemo/arrayhello1012.jpg" width="900" height="300">
+
+
+			<div>
+			<h6>Array Practice 1: Fill An Array and Print All the Elements</h6>
+			<p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js,result" data-slug-hash="WNMYBOV" data-editable="true" data-user="eecs1012" style="height: 330.2222595214844px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/WNMYBOV">
+			ctc-array-</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>
+
+			<div>
+			<h6>Array Practice 2: Search for a Specific Element</h6>
+			<p class="codepen" data-height="370" data-theme-id="dark" data-default-tab="js,result" data-slug-hash="YzegeEZ" data-editable="true" data-user="eecs1012" style="height: 368.4444580078125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/YzegeEZ">
+			ex-array-string-initial-coursename</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>
+
+
+			<div>
+			<h6>Array Practice 3: Search for the Maximum Element</h6>
+			<p class="codepen" data-height="345.3333435058594" data-theme-id="dark" data-default-tab="js,result" data-slug-hash="PoQxvJX" data-editable="true" data-user="eecs1012" style="height: 345.3333435058594px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/PoQxvJX">
+			ctc-array-search maximum num</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>
+
+			<div>
+			<h6>Array Practice 4: Whether One Array Is a Subset of the Other</h6>
+			<p class="codepen" data-height="309.77777099609375" data-theme-id="dark" data-default-tab="js,result" data-slug-hash="VwQVOyx" data-editable="true" data-user="eecs1012" style="height: 309.77777099609375px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			<span>See the Pen <a href="https://codepen.io/eecs1012/pen/VwQVOyx">
+			ctc-array-subarray-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+			on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</div>
+
+
+
+			 <h6>exercise: Double Check the Test Paper Color</h6>
+			  <p>In a paper test, students sitting next to each other should be given paper of different color.<br>
+				 Assume each row has 20 seats, the first seat is alway given a green paper.<br>
+				 Given an array of paper color, i.e. papers=["g", "b", "g", "b","g","b","b","b","g","b","g","g",......"b"]<br>
+				 draw a flowchart to check if the paper put on the table is of correct color.If incorrect, change the paper color for a correct one.
+			  </p>
+			  <p><a href="#sol-paper-color">check up solution</a></p>
+
+			 <div class="ponds" id="pondering02">
+			  <h3>&#127770;&nbsp;The Modern JavaScript Tutorial</h3>
+			  <a href="https://javascript.info/var" target="_blank"><h4>6.4 The old "var"</h4></a>
+			  <a href="https://javascript.info/variables" target="_blank"><h4>2.4 Variables</a></h4>
+			  <a href="http://javascript.info/types" target="_blank"><h4>2.5 Data Types</h4></a>
+			  <a href="https://javascript.info/alert-prompt-confirm" target="_blank"><h4>2.6 Interaction: alert, prompt, confirm</h4></a>
+			  <a href="https://javascript.info/type-conversions" target="_blank"><h4>2.7 Type Conversions</h4></a>
+			  <a href="https://javascript.info/operators" target="_blank"><h4>2.8 Basic operators, maths</h4></a>
+			  <a href="https://javascript.info/comparison" target="_blank"><h4>2.9 Comparisons</h4></a>
+			  <a href="https://javascript.info/ifelse" target="_blank"><h4>2.10 Conditional branching: if, '?'</h4></a>
+			  <a href="https://javascript.info/logical-operators" target="_blank"><h4>2.11 Logical operators</h4></a>
+			  <a href="https://javascript.info/while-for" target="_blank"><h4>2.13 Loops: while and for</h4></a>
+			  <a href="https://javascript.info/switch" target="_blank"><h4>2.14 The "switch" statement</h4></a>
+			  <a href="https://javascript.info/function-basics" target="_blank"><h4>2.15 JS function basics</h4></a>
+			  <a href="https://javascript.info/function-expressions" target="_blank"><h4>2.16 JS function expressions</h4></a>
+			 </div> <!-- pondering02 -->
+
+
+			 <div class="ponds" id="pondering02">
+			  <h3>&#127770;&nbsp;The Modern JavaScript Tutorial</h3>
+			  <a href="https://javascript.info/primitives-methods" target="_blank"><h4>5.1 Methods of primitives</h4></a>
+			  <a href="https://javascript.info/string" target="_blank"><h4>5.2 Strings</h4></a>
+			  <a href="https://javascript.info/array" target="_blank"><h4>5.4 Arrays</h4></a>
+			  <a href="https://javascript.info/array-methods" target="_blank"><h4>5.5 Array methods</h4></a>
+			  <a href="https://javascript.info/date" target="_blank"><h4>5.11 Date and time</h4></a>
+			 </div> <!-- pondering02 -->
+
+		</div> <!-- class="indentcontent" -->
+        </div> <!-- class="lecturereview" -->
+
+        <div class="discussion">
+		<p><br></p>
+		<h2>&#127773;&nbsp;Open Up Your Mind</h2>
+		  <div class="indentcontent">
+          <h3>&#127770;&nbsp;Do you have any difficulty in drawing flowchart, or thinking of an algorithm before implementation?</h3>
+		  </div>  <!-- class="indentcontent" -->
+		</div> <!-- class="discussion" -->
+
+		</section> <!-- leftcolumn -->
+
+        <div class="sidebar">
+		  <div class="links">
+		  <h3>links</h3>
+		  <nav>
+			<ul>
+			<li><a href="https://gamealchemist.wordpress.com/2013/05/01/lets-get-those-javascript-arrays-to-work-fast/">Let’s get those Javascript Arrays to work fast</a><br/><span class="linksspan">also used in EECS3311 and EECS3421</span></li>
+			<li><a href="https://blog.devgenius.io/arrays-and-array-in-javascript-345b4f87a232">Javascript Array Objects, Dense and Sparse Arrays</a></li>
+			<li><a href="https://www.youtube.com/watch?v=82On4PqsOwM">Collaborate With Others in Visual Studio</a></li>
+		    <li><a href="https://www.w3schools.com/js/default.asp">W3Schools JavaScript</a></li>
+			<li><a href="https://the-winter.github.io/codingjs/">Coding JS</a><br/><span class="linksspan">practicing your computational thoughts using JavaScript</span></li>
+		    </ul>
+		  </nav>
+	   </div>
+
+       <div class="contact">
+	     <h3>Contact</h3>
+		 <nav>
+		 <ul>
+		 <li>Course instructor:<br/><span>Hui Wang</span></li>
+		 <li>created by:<br/><span>Xuan Chen</span></li>
+		 </ul>
+		 </nav>
+	   </div> <!-- contact -->
+	   </div> <!-- sidebar -->
+    </div> <!-- class="main" -->
+  </body>
+</html>

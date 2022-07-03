@@ -43,14 +43,13 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin-left:-2%;
   margin-bottom:2%;
   border-bottom: 3px solid #40404a;}
 
 h3 {
   font-size: 1.2em;
   margin-top:2%;
-}
+  margin-left:-4%;}
 
 h4 {
   font-size: 1.25em;
@@ -78,7 +77,8 @@ img {
 
 nav a {
   color: #666;
-  display: block;}
+  display: block;
+  text-transform: lowercase;}
 
 nav a:hover {
    color: #00b32d;}
@@ -154,7 +154,7 @@ input{
 }
 
 div .indentcontent, .epiphany{
-  margin-left: 20px;}
+  padding-left: 60px;}
 
 .epiphanyheader:hover{
     cursor:pointer;
@@ -186,7 +186,6 @@ body {
 
   .discussion{
       margin-top:2%;
-      margin-left:3%;
   }
 
 .sidebar{
@@ -197,7 +196,7 @@ body {
 
 .sidebar h3{
   font-size:1.25em;
-  text-align:left;
+  align:left;
   border-bottom: 3px solid #40404a;}
 
 .sidebar li{
@@ -215,9 +214,11 @@ body {
   color:#00b32d;
   border-bottom: 1px solid #abbaac;}
 
+
  .links{
      margin-right:10%;
-     width:70%;}
+     width:80%;
+ }
 
 .links li span{
    color:grey;
@@ -229,8 +230,7 @@ body {
 .contact{
     float:right;
     width:20%;
-    margin-top:1%;
-    margin-right:30%;}
+    margin-top:1%;}
 
 .contact li {
   color: #666;
@@ -247,25 +247,39 @@ body {
   border-bottom: 1px solid #beb6b8;}
 
 embed{
-    display:inline-block;}
+  display:inline-block;}
 
 .sol{
-    display:none;
-}
+  display:none;}
 
-#comment-flowchart-2:target{
-    display: inline-block;
-}
+.exp{
+  display:none;}
 
-#sol-reverse-colrow:target {
-    display: inline-block;
-}
+table{
+    display:inline-block;}
 
-#sol-variable-name:target {
-    display: inline-block;
-}
+table,th, td{
+    text-align:center;
+    border-left: 10px solid white;
+    border-right: 10px solid white;}
 
+.andb{
+    color: green;}
 
-#sol-variable-name:target{
-    display: inline-block;
-}
+.anda{
+    color: blue;}
+
+.ora{
+    color: blue;}
+
+.orb{
+    color:green;}
+
+#exp-nested-and:target{
+    display:inline-block;}
+
+#exp-nested-or:target{
+    display:inline-block;}
+
+pre{
+    display:inline-block;}
