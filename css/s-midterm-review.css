@@ -248,10 +248,11 @@ body {
 
 embed{
     display:inline-block;}
-
+/*
 .sol{
     display:none;
 }
+*/
 
 #sol-split-digit:target{
     display: inline-block;
