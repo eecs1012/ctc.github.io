@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title id="pagetitle">EECS1012: Computational Meditation Club</title>
+	<meta name="author" content="Xuan Chen">
+	<link rel="stylesheet" href="./css/s-ctc-introloop.css" media="screen" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+	
+  <body>
+
+	<header>
+	  <a href="index.html">
+	    <div class="logobar">
+		  <ul>
+		    <li>
+			  <img src="./img/index/logohtmllarge.png" alt="html5 logo" width="100" height="30">
+			</li>
+		    <li>
+			  <img src="./img/index/logocsslarge.png" alt="css3 logo" width="100" height="30">
+			</li>
+			<li>
+			  <img src="./img/index/logojslarge.png" alt="javascript logo" width="100" height="30">
+			</li>
+			<li>
+			  <img src="./img/index/logocomputational.png" alt="icon computational thinking" width="500" height="30">
+			</li>
+			<li>
+			  <img src="./img/index/lassonde.png" alt="icon computational thinking" width="130" height="32">
+			</li>
+			<li>
+			  <img src="./img/index/logoYork.png" alt="yorku logo" width="126" height="32">
+			</li>
+		  </ul>
+	    </div> <!-- class="logobar" -->
+	  </a>
+
+      <a href="index.html">
+      <div class="hover_img">
+	  <h1 class="coursetitle">Computational Meditation Club</h1>
+      <p id="course-name">EECS1012:Introduction to Computing: a Net-centric Approach<span><img src="./img/index/meditation.png" alt="image" height="100" /></span></p>
+      </div>
+      </a>
+    </header>
+
+	<div class="main">
+        <section class="leftcolumn">
+        <div class="lecturereview">
+	      <h2>&#127773; Lecture Highlights</h2>
+		</div>
+
+		<div class="indentcontent">
+			<div class="ponds">
+				<h3>&#127770; ponder-1: What Is a Class?</h3>
+				<h6><a href="#three-d-descrp">Use a metaphor to describe what is a class like in your mind.</a></h6>
+				<div class="sol-dis-class">
+					<p class="sol">In my mind, class is like a 3D printer that allows you to modify the design by changing the attributes and behaviour of a blueprint, and produce things according to customization.</p>
+					<img class="sol" src="./img/s-oop/autocad.jpeg" />
+					<img class="sol" src="./img/s-oop/three-d-printer.jpeg" />
+					<img class="sol" src="./img/s-oop/house-1.jpeg" />
+					<img class="sol" src="./img/s-oop/house-2.jpeg" />
+					<p>Assume all the houses have attributes: address; indoor temperature; security service; </p>
+					<p>Assume all the houses have behaviours: heating; cooling; calling-security; </p>
+					<p>
+						These common attributes and behaviours can be grouped and abstracted to represent a class, the class name is House.
+						We can customize and create a concrete house object/ instance by modifying the values of these attributes and behaviours.
+					</p>
+				</div>
+			</div>
+
+
+			<div class="ponds">
+				<h3>&#127770; ponder-2: A Concrete Example of Class: House</h3>
+				<img class="sol" src="src=./img/s-oop/bedrooms.jpeg" />
+				<p class="codepen" data-height="477" data-default-tab="html,result" data-slug-hash="KKQLWVV" data-user="eecs1012" style="height: 477px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+					<span>
+						See the Pen <a href="https://codepen.io/eecs1012/pen/KKQLWVV">
+							oop-house-behaviour
+						</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+						on <a href="https://codepen.io">CodePen</a>.
+					</span>
+				</p>
+				<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+				<h5>A Class is a description of a group of objects with common properties(attributes), behavior(operations), and relationships.</h5>
+				<h5>A class is an abstraction. An object is an instance of a class.</h5>
+			</div>
+
+
+			<div class="ponds">
+				<h3>&#127770; ponder-3: DOM Revisit: Each HTML Tag Is an Object</h3>
+				<h6>User your own words to describe why HTML tag can be viewed as objects.</h6>
+				<p>Here is <a href="./attri.html" target="_blank">an html page</a>, open the console, then hit the button to see what is printed. 
+				   Read the html and js code, with the help of the diagram below, try to understand what happens behind the scene.</p>
+<pre><code>
+	function printAttributes(){
+		var element = document.getElementById("intro");
+		var attribs = element.attributes;
+		for(var i = 0; i < attribs.length; i++) {
+			console.log(attribs[i]);
+		}
+	}
+</code></pre>
+				<embed type="text/html" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=000000&edit=_blank&layers=1&nav=1&title=dom-oop.drawio#R7V1bl5s2EP41%2B7h7EHces7tJmjZp2qZt2kdsZJtdbDkY79r99RXmYtAIg20ksNmcPSdGBoHnmxl9M5KGG%2B1hvvkYusvZF%2BLh4EZVvM2N9nijqkg1Ef0vbtkmLaZmJA3T0PeSJmXf8M3%2FD6dXZq1r38OrtC1piggJIn9ZbhyTxQKPo1KbG4bktXzahAReqWHpTjFo%2BDZ2A9j63feiWdJqq9a%2B%2FSfsT2fZnZHpJN%2FM3ezk9JesZq5HXgtN2vsb7SEkJEo%2BzTcPOIiFl8nl%2B6ft9%2BDzs%2Fnx599XP9y%2F7n%2F589e%2Fb5POPhxzSf4TQryITu765ffRPXr9tHl6etbJHH1d2bfrW4T0pPMXN1inEkt%2FbbTNRIg9KtH0kITRjEzJwg3e71vvQ7JeeDi%2BkUKP9ud8JmRJGxFtfMJRtE3Vw11HhDbNonmQfjshiyj9Uo27wAvvXQw%2BPV6QBU5aPvhBkN5iFYXkOQeUQnGfPHX8qAzuNUJLz1uRdTjGB87TcsSpqWAyx1G4pdeFOHAj%2F6V8UzfV2Wl%2BXn7pb8Snj6MqqX2ZqW5tM3NTyj1EbjjFUXrRHlwqG3dbOG0Zn7BqfBuT0ZRjzqYfkrtnRwVx7Jt2uneEimtACz0yXs9x%2BrOL2rjXtVhxXmd%2BhL8t3R12r9SFHdaraeCuVpU6lFt4%2FPWEatsDCUi4u602scd4PM4vK3wzsg3dUHIVbKpxLziM8KagN1C5sm8ZJUkPX%2FfuLNebWcGVaYwuFbWxgOZBsLhOw%2BiFy6hzESz0LbuM1l2B4dw5Rglo274z1HI3iZsC%2FgB0hhTam%2B4U%2FtX13JKnaXzjttwJV0OtNw1lBzWunHQpg5plNFK1tsBHSO0F%2FOdzGrzxo3%2FSb%2BPP%2F8af74z06HFT%2BOpxmx6IVhlkGkKUxmFIh82MXk0934mMqjXly0bdi1e%2By%2FQ9yCrjr7N6JBh%2FGE6NiLftC4nFyDOwxSOxjmlprpnDDsjp6bQo64VlsWbXNBYhSGRn2PXewAJgWXrXWKn9oHT9d6soEUzrjlVjBmjbkTuuqjBFABRgSvFdVtpEmmF0R9npSiu2ohplwRgqdGyabUJj0TVTkLXYqF5WUHMLal62k%2Fo4hcov3OZMNT4oUNX4cM9Vd0dHkNXD2pBo3YEzLYsPXgEcg%2BPIsrYzjcZmxjwmEGrKaZluGsZTx4buzF0M45hnMktni4nq7QYu4FrGgMNqXzsKWGJyVGo5QaVpYjSx4jZiU0bQZ64DoF4XTgUPadXRPlIY2bNgEEV%2FlLSZAFQDBoXC9nQeGLY60kxBYOQTspBdyAWnH9n%2Fy3HCTUjKubmQ8xCFoVXgr6LbHaC30XaJ%2B2J5kwk2%2BXNwnuWMFEWO5WX8iJO%2FMGVaom3XW%2BL5EdFJsmIGcKQYQFZq9rRFWTmiZKU1WOYgSFYJTJWicqBokCVTNCoUTeAPgvhoFW63q6FVNYfLe6qwyJwt6pb1DCn9eNCB1pKezJ3Ukp5E27siPaoDAJ3TJ%2FYXtwGe9MbkhBKeKpNjEjzFgUnhpDGF2dyQZlJl2ZzTpc3ZQ3eiGWNvCGh76buK%2FLPgORsb%2BlhZpLs2QElj%2BFQwaucBitPA2YkKUCqcQl8CFAdmZgcSoDgKH5muWLCjAiQGE6BUYVGdDZILzdDnxjL3Uzu2Ok2zsom2d0WWHJiWGVqAUmVyfQlQnKFPhQiwuU5nQhyYgBsWoBljbwjopQcoToOAtKsAJXX%2F2RIIZAJnl7fJYeHdzTY5FWu4qgOU%2FJ5yRAPj3KEEKBVzW12xYKTAMHo4EUoFGOVtvB1i02RV6jWPrk7T9F%2FmUGrpUqrvXfElpMCEwOCClMPT%2B50HKUgZfGZAgNl1mhpAyoCKdhzFCM8NP5rtaYF7V5nlTkw3Fcv8W9sao0BqrinLDVCJHRNivWCKVNFlpk1u4E8X9HDnyrX72Dn6Yzd4lzbPfc%2Fb6dGKunB%2FMf28O%2B1R37f8kbq3uInQyyfBTjdm9EJMe7hPl4HTZzPu6R%2F1gA%2FxlhGDPusDPUb7Y%2FoXnx5GD2RBH9%2F1d9qB3VX0ilfRTpcjN4sseFtWTvfvdYGalnnzA2vdbLk8C4Yjb%2BogTR2YnZP5UsjO1AHBkOhNHeR5B2Yriw7zOHLVwYQ5r9WPNf2dVQpxJE0XJ0u2RIQOqbXDEaUhTpQw%2Fz8hJMIhEOWF537a2O6vaJxISO4echOm990oCv3ROqLar5DRU1yA8MqC1hOwM7Kajzmfhatv5W51QJzdeTjASX04ycD12OgAcBocbWQDBzNESUK2Z%2BbWVma2BdRUnWNuclO1FswZPX79EgfYcbXTvllc49KMIrBjtuY7EDpLKnQ2pPsAp27qZGiMqLqvKcPxTX4USNvu2O2ub%2Fvw6hoOXeOxa4E%2BqMGE82UXMclMtT7frFbkmwVXMTmzbAkTr7HlbkRXDGpSBacTT4j0smDyfgtw6joHT1DMsMVhA%2FpCAcI6BFSluDgT1xovZyJSOpAPxZXi5EX6dfRV8FBR734sqXOaNq%2FMYkjxSIoW9AUVsfUKqlDJKzGbdxyKpWt3cqEa%2BiLZ3LXWl%2B6zm1Y1Sw2gswnowe%2FkOxrU9uaqM35ulzhEntaRxq4gPffc1YzCySqC9HmEGsdIg%2FaS6G6bzdDpolxkhlwn1OuwqMo6psHkRj7dWZQUW3K5vRdPNBhLBEnKPBwtczgqNyITJhoEzXGGgHCukZ0aFfXoO1vnCpdfjHc%2FuCdgCCWlVWCk3VjQTKROR6gNXO1V85bMgzagLTcNqWinJSVUmOMZzHr%2FKlvryY7kzLTebK01W6t6T5ikqM%2BEHGMaYrwAsMpm%2FDWjDtLKm%2Bk4hF%2FqwiGjQV2UVmc2TtXgKtIrp3g6M1%2BItHIHp74QiOlGeJx8KWBXpuHf0D6C%2B%2Fd29j1bFZ5PxvE2FEuNWDl1fQTI6hBOPQ7nOaV2lkA61xjOo6rSAt3F83DybzgBfSUcPYnoEadODhxfrznMyP1ofZyROZUGQf25kxZnggoTvYMJ6ystridxPRp8lRwxFnfua1XPBBXO6I4Cd%2FwMkJU%2Bm1czAPUtuEdNCuX0I%2BA7sbzkW8BXnFBoUtREMtrHhIdysK59K29TtFWlpiPheF9LNQ2Bq53Pen%2BpmtWUqX9rUis16I5%2BNx3zbhtDxsvpVE6hnYX7AjTvwjcqnJTXYhyCCdc8yp324hRnucbY5QSsNLucg%2BTsAGoJKnq426lWMEIq0tkX4uH4jP8B"
+				width="660" height="800" />
+
+				<img src="./img/s-domjs/domtreeul.png" />
+
+			</div>
+
+
+			<div class="ponds">
+				<h3>&#127770; ponder-4: Stack Visualization</h3>
+				<p><a href="https://www.cs.usfca.edu/~galles/visualization/StackArray.html" target="_blank">click here to visualize the stack operations</a></p>
+				<h6><a href="https://leetcode.com/problems/valid-parentheses/" target="_blank">exercise: match the parenthesis</a></h6>
+
+			</div>
+
+			<div class="ponds">
+				<h3>&#127770; ponder-5: Queue Visualization</h3>
+				<p><a href="https://www.cs.csub.edu/~msarr/visualizations/QueueArray.html" target="_blank">click here to visualize the queue operations</a></p>
+			</div>
+
+		</div> <!-- class="indentcontent" -->
+        </div> <!-- class="lecturereview" -->
+	 <div class="indentcontent">
+        <div class="discussion">
+		<h2>&#127773; Open Up Your Mind</h2>
+		  <div class="indentcontent">
+          <h3>&#127770; Do you have any confusion in understanding what is an object?</h3>
+		  </div>  <!-- class="indentcontent" -->
+		</div> <!-- class="discussion" -->
+	  </div> <!-- class="indentcontent" -->
+		</section> <!-- leftcolumn -->
+
+        <div class="sidebar">
+		  <div class="links">
+		  <h3>links</h3>
+		  <nav>
+			<ul>
+			<li><a href="https://app.diagrams.net/">Online Diagrams Tool</a><br/><span class="linksspan">also used in EECS3311 and EECS3421</span></li>
+			<li><a href="https://www.youtube.com/watch?v=OQcWiFA5B_0">Draw Flowchart in Visual Studio</a></li>
+			<li><a href="https://the-winter.github.io/codingjs/">Coding JS</a><br/><span class="linksspan">practicing your computational thoughts using JavaScript</span></li>
+		    </ul>
+		  </nav>
+	   </div>
+
+       <div class="contact">
+	     <h3>Contact</h3>
+		 <nav>
+		 <ul>
+		 <li>Course Instructor:<br/><span>Hui Wang</span></li>	
+		 <li>Created by:<br/><span>Xuan Chen</span></li>
+		 <li>Mail to:<br/><span>eecs1012ctc@gmail.com</span></li>
+		 </ul>
+		 </nav>
+	   </div> <!-- contact -->
+	   </div> <!-- sidebar -->
+    </div> <!-- class="main" -->
+  </body>
+</html>
