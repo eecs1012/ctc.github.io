@@ -3,7 +3,7 @@
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title id="pagetitle">EECS1012: Computational Meditation Club</title>
 	<meta name="author" content="Xuan Chen">
-	<link rel="stylesheet" href="./css/session-subalgorithm.css" media="screen" >
+	<link rel="stylesheet" href="./css/s-subalgorithm.css" media="screen" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="./js/sctc1/soltablediff.js"></script>
   </head>
@@ -41,33 +41,43 @@
 	<div class="main">
         <section class="leftcolumn">
         <div class="lecturereview">
-	    <h2>&#127773;&nbsp;Lecture Highlights</h2>
-		<ul>
-		  <li>Top-Down Design Pattern for a Sub-algorithm</li>
-		  <li>Call Sub-algorithm Example: Help Old Mcdonald Inter-plant Crops</li>
-		  <li>Tracing the Algorithm</li>
-		  <li>Variable Scopes: let, const, var</li>
-		</ul>
-
 		<!-- https://slideplayer.com/slide/16488098/ -->
 
 		  <div class="indentcontent">
-		  <div class="ponds" id="pondering01">
-			  <h3>&#127770;&nbsp;pondering01: Structure of A JavaScript Function</h3>
-			  <img src="./img/session-subalgorithm/jsfunctionstructure.png">
-			 </div> <!-- pondering01 -->
+		  <div class="ponds">
+			  <h3>&#127770; ponder-1: Structure of A JavaScript Function</h3>
+			  <img src="./img/session-subalgorithm/jsfunctionstructure.png" width="600" height="430">
+			  <h3>Q1: What Is <code>parameter</code>, What Is <code>argument</code>?</h3>
+			    <div id="sol-argu-param">
+				<img src="./img/session-subalgorithm/argu-param.png" width="600">
+				<p>A parameter is the variable listed inside the parentheses in the function definition. It can be viewed as a place holder.</p>
+				<p>An argument is the actual value that is sent to the function when the function is called.</p>
+			  </div>
+
+			  <h3>Q2: What does the keyword <code>return</code> do? Can we delete the line with <code>return</code>?</h3>
+			  <h3>Click the button to see what happens, and modify the code to fix the bug</h3>
+			  <p class="codepen" data-height="359.76904296875" data-default-tab="js,result" data-slug-hash="MWVJqjL" data-editable="true" data-user="eecs1012" style="height: 359.76904296875px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+				<span>See the Pen <a href="https://codepen.io/eecs1012/pen/MWVJqjL">
+				ctc-memo-pass-by-value-without-return</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
+				on <a href="https://codepen.io">CodePen</a>.</span>
+			  </p>
+			  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			  <p>Functions return (pass back) values using the <code>return</code> keyword. 
+			  <p><code>return</code> ends function execution and returns the specified value to the location where it was called.</p>
+			  <p>A common mistake is to forget the <code>return</code> keyword, in which case the function will return <code>undefined</code> by default.</p>
+	      </div>
 
 
-			 <div class="ponds" id="pondering02">
-			  <h3>&#127770;&nbsp;pondering02: Parameter of Primitive Types: Pass by Value</h3>
+			 <div class="ponds">
+			  <h3>&#127770; ponder-2: Parameter of Primitive Types: Pass by Value</h3>
 			  <p>There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null. 
-			  In JavaScript, all function arguments are always passed by value. 
+			  In JavaScript, all function arguments with primitive types are always passed by value. 
 			  It means that JavaScript copies the values of the variables into the function arguments.
 			  Any changes that you make to the arguments inside the function do not reflect the passing variables outside of the function. 
 			  In other words, the changes made to the arguments are not reflected outside of the function.</p>
-			  <iframe width="900" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%20%20var%20originPrice%20%3D%201000000%3B%0A%20%20var%20currPrice%20%3D%20evaluate%28originPrice%29%3B%0A%0A%20%20console.log%28%22original%20price%20%3D%20%22%20%2B%20originPrice%20%2B%22%3B%20currPrice%3D%22%2BcurrPrice%29%3B%0A%0A%20%20function%20evaluate%28price%29%20%7B%0A%20%20%20%20%20price%20%3D%20price%20*%201.10%3B%0A%20%20%20%20%20return%20price%3B%0A%20%20%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false">
+			  <iframe width="800" height="500" frameborder="0" 
+			  src="https://pythontutor.com/iframe-embed.html#code=%20%20var%20purPrice%20%3D%20100%3B%0A%20%20var%20salPrice%20%3D%20evaluate%28purPrice%29%3B%0A%0A%20%20console.log%28%22purchase%20price%20%3D%20%22%20%2B%20purPrice%20%2B%22%3B%20salPrice%3D%22%20%2B%20salPrice%29%3B%0A%0A%20%20function%20evaluate%28purPrice%29%20%7B%0A%20%20%20%20%20purPrice%20%3D%20purPrice%20*%201.10%3B%0A%20%20%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false">
 			  </iframe>
-
 			  <p>How the script works.</p>
 			    <p>1) declare the variable originPrice and initialize its value to 1.00 million:</p>
 				<img src="./img/session-subalgorithm/callbyval01.png">
@@ -87,52 +97,56 @@
 			 </div> <!-- pondering02 -->
 
 
-			<div class="ponds" id="pondering03">
-			  <h3>&#127770;&nbsp;pondering03: Call Sub-Algorithm Example</h3>
-			  <p>draw a flowchart to judge whether an input number is a perfect number.<br>
+			<div class="ponds">
+			  <h3>&#127770; ponder-3: Call Sub-Algorithm Example</h3>
+			  <p>Draw a flowchart: Given an array of numbers, count how many perfect numbers it contains.<br>
 			  A perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. 
 			  For instance, 6 has divisors 1, 2 and 3 (excluding itself), and 1 + 2 + 3 = 6, so 6 is a perfect number.
 			  </p>
-			  <p>Hint:  At the design stage, focus on the main algorithm first, abstract the sub-algorithm into merely a function name.</p>
-			  <a href src="#sol-algorithm-name"><h6>Meditation In Depth</h6></a>
-			  <p class="sol" id="sol-algorithm-name">It is the descriptive name of the sub-algorithm that make the program easier to understand. 
+			  <p>Hint-1:  At the design stage, focus on the main algorithm first, abstract the sub-algorithm into merely a function name.</p>
+
+			  <a href="#sol-subalg-name"><h6>How to Properly Name the Sub-algorithm</h6></a>
+			  <p class="sol" id="sol-subalg-name">It is the descriptive name of the sub-algorithm that make the program easier to understand. 
 			  Hence the name of the sub-algorithm is very important.
 			  There exist many well-known function prefixes like create…, show…, get…, check… and so on. 
 			  Use them to hint what an algorithm does.
 			  </p>
-			  </div> <!-- pondering03 -->
+			  </div>
 
 
 			<div class="ponds" id="pondering04">
-			  <h3>&#127770;&nbsp;pondering04: Why do we need to call subalgorithm?</h3>
-			  <h4>1. Avoid Code Duplication</h4>
+			  <h3>&#127770;&nbsp;ponder-4: Why do we need to call subalgorithm?</h3>
+			  <h4>1. Do You Need to Draw the Flowchart for the Subalgorithm <a href="./s-midterm-review.html" target="_blank">If You Have Done It Before?</a></p></h4>
+			  <p>Calling subalgorithm allows code to be reused.</p>
+
+			  <h4>2. Avoid Code Duplication</h4>
 			  <p>Jeremy Clarkson is going to interplant potatos and corns to increase the productivity. 
 			  That field has 10 field ridges, each ridge is of 10 plants' length.
-			  In HTML, potato is represented by <img src="./img/session-ctc4/potato.png">, corn is represented by <img src="./img/session-ctc4/corn.png">
+			  In HTML, potato is represented by <img src="./img/session-subalgorithm/potato.png">, corn is represented by <img src="./img/session-subalgorithm/corn.png">
 			  <img src="./img/session-subalgorithm/samplefield.png">
 			  </p>
-			  <h6>Q1.Draw a flowchart without calling subalgorithm.</h6>
-			  <h6>Q2. Draw another flowchart by calling a subalgorithm "plantRow(vegetableName)" </h6>
+			  <h6>Q1.Code without calling subalgorithm.</h6>
+			  <h6>Q2.Code by calling a subalgorithm "plantRow(vegetableName)" </h6>
 			  <h6>Q3.If Clarkson is going to adopt one of the two algorithms to design and draw the blueprints for all fields in his farm, which one would he use? Why?</h6>
 
-			  <p class="codepen" data-height="379.9999694824219" data-theme-id="light" data-default-tab="js,result" data-slug-hash="KKQxqOE" data-editable="true" data-user="eecs1012" style="height: 379.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+			  <p class="codepen" data-height="380" data-theme-id="light" data-default-tab="js,result" data-slug-hash="KKQxqOE" data-editable="true" data-user="eecs1012" style="height: 379.9999694824219px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 			  <span>See the Pen <a href="https://codepen.io/eecs1012/pen/KKQxqOE">
 			  ctc4-subalgorithm-interplant-duplication-quest</a> by eecs1012 (<a href="https://codepen.io/eecs1012">@eecs1012</a>)
 			  on <a href="https://codepen.io">CodePen</a>.</span>
 			  </p>
 			  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-			  <h4>2.Improve the Readability of the Code</h4>
-			  <h6>Q1.Draw a flowchart without calling a subalgorithm: Given an array of integers, output the numbers that are perfect numbers.</h6>
-			  <h6>Q2.Improve the flowchart by calling a subalgorithm: isPerfectNum(number)</h6>
-			  <a href src="#sol-avoid-duplication"><h6>Meditation In Depth</h6></a>
-			  <p class="sol" id="sol-avoid-duplication">Whenever you see the same computation multiple times in a program, 
-			  you should create a separate (helper) function for that computation and call that function instead. 
-			  This enables you edit the program in only one place if something changes.
+			  <h4>3.Improve the Readability and Maintanence of the Code</h4>
+			  <a href="#sol-maintanence"><h6>Meditation In Depth</h6></a>
+			  <p class="sol" id="sol-maintanence">Whenever you see the same computation multiple times in a program, <br>
+			  you should create a separate (helper) function for that computation and call that function instead. <br>
+			  This enables you edit the program in only one place if something changes. <br>
+			  For example, clarkson invests a larger farm with each filed to be larger, <br>
+			  then he only needs to change the value of length inside the subalgorithm. 
 			  </p>
-			 </div> <!-- pondering04 -->
+			 </div>
 
-			</div> <!-- pondering07 -->
+			</div>
 
 
 		</div> <!-- class="indentcontent" -->
