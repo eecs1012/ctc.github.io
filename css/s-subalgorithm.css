@@ -43,14 +43,13 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin-left:-2%;
   margin-bottom:2%;
   border-bottom: 3px solid #40404a;}
 
 h3 {
   font-size: 1.2em;
   margin-top:2%;
-}
+  margin-left:-4%;}
 
 h4 {
   font-size: 1.25em;
@@ -78,7 +77,8 @@ img {
 
 nav a {
   color: #666;
-  display: block;}
+  display: block;
+  text-transform: lowercase;}
 
 nav a:hover {
    color: #00b32d;}
@@ -154,7 +154,7 @@ input{
 }
 
 div .indentcontent, .epiphany{
-  margin-left: 20px;}
+  padding-left: 60px;}
 
 .epiphanyheader:hover{
     cursor:pointer;
@@ -186,7 +186,6 @@ body {
 
   .discussion{
       margin-top:2%;
-      margin-left:3%;
   }
 
 .sidebar{
@@ -197,7 +196,7 @@ body {
 
 .sidebar h3{
   font-size:1.25em;
-  text-align:left;
+  align:left;
   border-bottom: 3px solid #40404a;}
 
 .sidebar li{
@@ -215,9 +214,11 @@ body {
   color:#00b32d;
   border-bottom: 1px solid #abbaac;}
 
+
  .links{
      margin-right:10%;
-     width:70%;}
+     width:80%;
+ }
 
 .links li span{
    color:grey;
@@ -230,7 +231,8 @@ body {
     float:right;
     width:20%;
     margin-top:1%;
-    margin-right:30%;}
+
+}
 
 .contact li {
   color: #666;
@@ -253,14 +255,10 @@ embed{
     display:none;
 }
 
-#sol-split-digit:target{
-    display:inline-block;
+#sol-subalg-name:target{
+  display:inline-block;
 }
 
-#sol-combine-digit:target {
-    display:inline-block;
-}
-
-#sol-perfect-num:target {
-    display:inline-block;
+#sol-maintanence:target{
+  display:inline-block;
 }
