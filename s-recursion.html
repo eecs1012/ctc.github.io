@@ -56,7 +56,7 @@
 				<h6>Write an iterative function that is given an array of integers and the size of the array as parameters. 
 				    Thefunction returns the sum of the integers in the array.</h6>
 
-<pre class="sol" id="sol-iterative"><code>
+<pre><code>
 int iterativeArraySum(int integers[], int size) {
   int sum = 0;
   for (int i = 0; i < size; i++) {
@@ -120,10 +120,85 @@ return sum;
 		return lastNumber + allButLastSum;
 	}
 </code></pre>
+<p>Only two changes have been made to the previous code. The name of the function
+	has been changed to better describe its new form, and the function now calls
+	itself where it previously called the iterative function . The logic of the two
+	functions, <code>arraySumDelegate</code> and <code>arraySumRecursive</code>, is identical. 
+	Each function checks for a trivial case in which the sum is already known—in this case,
+	an array of size 0 that has a sum of 0. 
+	Otherwise, each function computes the sum of values in the array by 
+	making a function call to compute the sum of all of the values, save the last one. 
+	Finally, each function adds that last value to the returned sum for a grand total. 
+	The only difference is that the first version of the function calls another function, 
+	while the recursive version calls itself. The BRI tells us that 
+	if we follow the rules outlined above for writing the dispatcher, 
+	we can ignore that distinction.</p>
 </div>
-			<div class="ponds">
-				<h3>&#127770; ponder-4: Common Mistakes in Constructing Recursion</h3>
-			</div>
+
+<div class="ponds">
+	<h3>&#127770; wrap up: From Iteration to Recursion</h3>
+	In particular, you usually would not implement an iterative solution to the problem before implementing a recursive solution.
+	Writing an iterative function as a stepping-stone is extra work that will eventually be thrown away. 
+	Besides, recursion is best applied to situations in which an iterative solution is difficult, as explained in the lecture. 
+	However, you can follow the outline of this idea of modifying without actually writing the iterative solution. 
+	The key is thinking of a recursive call as a call to another function, without regards to the internals of that function. 
+	In this way, you remove the complexities of recursive logic from the recursive solution.
+</div>
+
+<div class="ponds">
+	<h3>&#127770; ponder-4: Common Mistakes in Constructing Recursion</h3>
+	<h6>1. Overthinking the problem or beginning implementation without a clear plan.</h6>
+	<p>Code produced by overthinking can be recognized by its too-careful appearance. For example, a recursive function might
+		have several special cases where it needs only one.</p>
+    <h6>mistake example 1: Too Many Parameters</h6>
+	<p>Consider our problem of recursively computing the sum of an array of integers. 
+		Writing an iterative solution to this problem, the programmer knows a “running total” variable will be needed 
+		(in the iterative solution provided, I called this sum) and the array will be summed starting from the first element. 
+		Considering the recursive solution, the programmer naturally imagines an implementation that most directly mirrors the iterative solution, 
+		with a running total variable and the first recursive call handling the first element in the array. 
+		This approach, however, requires the recursive function to pass the running total and the location where 
+		the next recursive call should begin processing. Such a solution would look like this:</p>
+	<pre><code>
+		int arraySumRecursiveExtraParams(int integers[], int size, int sum, int currentIndex) {
+            if (currentIndex == size) return sum;
+            sum += integers[currentIndex];
+            return arraySumRecursiveExtraParameters(integers, size, sum, currentIndex + 1);
+        }
+	</code></pre>
+	<p>This code is as short as the other recursive version but considerably more semantically complex 
+		because of the additional parameters, sum and currentIndex. 
+		From the client code’s point of view, the extra parameters are meaningless and will always have to be zeroes in the call, as shown in this example</p>
+<pre><code>
+	int a[10] = {20, 3, 5, 22, 7, 9, 14, 17, 4, 9};
+	int total = arraySumRecursiveExtraParameters(a, 10, 0, 0);
+</code></pre>
+<p>
+	The iterative function for this problem and the original recursive function answer the question, 
+	what is the sum of this array with this many elements? In contrast, this second recursive function is being asked, 
+	what is the sum of this array if it has this many elements, we are starting with this particular element, 
+	and this is the sum of all the prior elements?
+</p>
+<h6>The “too many parameters” problem is avoided by choosing your function parameters before thinking about recursion. 
+	In other words, force yourself to use the same parameter list you would if the solution were iterative.</h6>
+<br>
+<h3>Practice: write a recursive function that counted the number of zeros appearing in an array of integers. </h3>
+<h3>Given the iterative function below, modify it into a recursive one.</h3>
+<p>Suppose we were asked to write a recursive function that counted the number of zeros appearing in an array of integers. 
+	This is a simple problem to solve using iteration:
+<pre><code>
+	int zeroCountIterative(int numbers[], int size) {
+		int sum = 0;
+		int count = 0;
+		for (int i = 0; i < size; i++) {
+		if (numbers[i] == 0) count ++;
+		}
+		return count;
+	}
+</code></pre>
+
+
+
+</div>
 		</div> <!-- class="indentcontent" -->
         </div> <!-- class="lecturereview" -->
 	 <div class="indentcontent">
