@@ -53,21 +53,74 @@
 		<div class="indentcontent">
 			<div class="ponds">
 				<h3>&#127770; ponder-1: Computing the Sum of an Array OF Integers</h3>
-				<h6>Write an iterative function that is given an array of integers and the size of the array as parameters. The
-function returns the sum of the integers in the array.</h6>
-			</div>
+				<h6>Write an iterative function that is given an array of integers and the size of the array as parameters. 
+				    Thefunction returns the sum of the integers in the array.</h6>
+
+<pre class="sol" id="sol-iterative"><code>
+int iterativeArraySum(int integers[], int size) {
+  int sum = 0;
+  for (int i = 0; i < size; i++) {
+  sum += integers[i];
+}
+return sum;
+</code></pre>
+		</div>
 
 
 			<div class="ponds">
 				<h3>&#127770; ponder-2: Construct a Dispatcher for the Iterative Function</h3>
+				<p>We will keep the iterative function and add a second function we will refer to as a dispatcher. The dispatcher will
+					hand off most of the work to the previously written iterative function and use this
+					information to solve the overall problem. To write a dispatcher, we have to follow
+					two rules:
+				</p>
+					<h6>1. The dispatcher must completely handle the most trivial case, without calling the iterative function.</h6>
+					<h6>2. The dispatcher, when calling the iterative function, must pass a smaller version of the problem.</h6>
+				    <h6>Q1: What is the most trivial case in this problem?</h6>
+					<p class="sol" id="sol-trivial-case">If the array's <code>size</code> is 0, then the function has been passed an array with a sum of 0.</p>
+					<h6>Q2: Think of a way to pass a smaller version of the problem from the dispatcher to the iterative function.</h6>
+					<p>There is no easy way to pass a smaller array, but we can easily pass a smaller value for <code>size</code>. 
+					If the dispatcher is given the value of <code>10</code> for size, the function is being asked to compute the sum of 10 values in the array. 
+					If the dispatcher passes <code>9</code> as the value of size to the iterative function, it is requesting the sum of the first <code>9</code> values in the array. 
+					The dispatcher can then add the value of the one remaining value in the array (the 10th) to compute the sum of all 10 values. 
+					Note that reducing size by 1 when calling the iterative function maximizes the work of the iterative function and thereby minimizes the work of the dispatcher.
+				    the dispatcher function avoids as much work as possible.</p>
+					<p>Putting these ideas together, here’s a dispatcher function for this problem:</p>
+					<pre><code>
+                     0     int arraySumDelegate(int integers[], int size) {
+					 1        if (size == 0)  return 0;  
+                     2        int lastNumber = integers[size - 1];
+                     3	      int allButLastSum = iterativeArraySum(integers, size - 1);
+                     4	      return lastNumber + allButLastSum;
+                     5     }</code></pre>
+
+					 <p>The first statement enforces the first rule of dispatchers: 
+						It checks for a trivial case and handles it completely, in this case, by returning <code>0</code>. 
+						Otherwise, control passes to the remaining code, which enforces the second rule. 
+						The last number in the array is stored in a local variable called lastNumber, 
+						and then the sum of all the other values in the array is computed via a call to the iterative function. 
+						This result is stored in another local variable, allButLastSum, 
+						and finally the function returns the sum of the two local variables.</p>
 			</div>
 
 
 			<div class="ponds">
 				<h3>&#127770; ponder-3: Change the Name of the Dispatcher</h3>
-			</div>
-
-
+				<p>If we have correctly created a dispatcher function, we have already effectively created a recursive solution. 
+					This is the Big Recursive Idea in action. 
+					To convert this iterative solution to a recursive solution requires but one further, simple step:
+				</p>
+				<h6>have the delegate function call itself where it was previously calling the iterative function.</h6>
+				<p>We can then remove the iterative function altogether.</p>
+<pre><code>
+	int arraySumRecursive(int integers[], int size) {
+		if (size == 0) return 0;
+		int lastNumber = integers[size - 1];
+		int allButLastSum = arraySumRecursive(integers, size - 1);
+		return lastNumber + allButLastSum;
+	}
+</code></pre>
+</div>
 			<div class="ponds">
 				<h3>&#127770; ponder-4: Common Mistakes in Constructing Recursion</h3>
 			</div>
